@@ -375,15 +375,6 @@ public class DialogGraphView : GraphView
     // Automatically create and display the StartNode
     private void CreateStartNode(Dictionary<BaseDialogNode, BaseNodeView> nodeViewLookup)
     {
-        //if (dialogGraph.startNode == null)
-        //{
-        //    // If no startNode exists, create a new one
-        //    dialogGraph.startNode = ScriptableObject.CreateInstance<BaseDialogNode>();
-        //    dialogGraph.startNode.name = "Start Node";
-        //    AssetDatabase.AddObjectToAsset(dialogGraph.startNode, dialogGraph);
-        //    EditorUtility.SetDirty(dialogGraph);
-        //}
-
         // Create the StartNodeView and position it
         startNodeView = new StartNodeView(dialogGraph);
         startNodeView.SetPosition(new Rect(dialogGraph.startNodePosition, new Vector2(200, 100)));

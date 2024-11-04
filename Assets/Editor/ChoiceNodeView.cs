@@ -48,7 +48,6 @@ public class ChoiceNodeView : BaseNodeView
         inputContainer.Add(InputPort);
     }
 
-    // Add an option with a corresponding output port and editable text field
     private void AddOption(int index)
     {
         Port optionPort = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(float));
@@ -70,26 +69,6 @@ public class ChoiceNodeView : BaseNodeView
         outputContainer.Add(container);
 
         OutputPorts.Add(optionPort);
-
-        //// Create an output port for the option
-        //Port optionPort = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, typeof(ChoiceNodeView));
-        //optionPort.portName = "1";  // We don't need to display a name here as we'll add an editable text field
-        //outputContainer.Add(optionPort);
-        //OutputPorts.Add(optionPort);
-
-        //// Create an editable text field for the option and position it next to the port
-        //TextField optionTextField = new TextField { value = DecisionNode.options[optionIndex] };
-        //optionTextField.style.width = this.style.width.value.value - 200;
-        //optionTextField.RegisterValueChangedCallback(evt =>
-        //{
-        //    // Update the option text in DecisionNode.options when edited
-        //    DecisionNode.options[optionIndex] = evt.newValue;
-        //    // Optionally, we could also update the output port's visual representation
-        //});
-
-        //// Add the text field next to the port
-        //optionPort.Add(optionTextField);
-        //OutputTexts.Add(optionTextField);
     }
 
     // Adds a new option (both UI field and port)
@@ -97,7 +76,7 @@ public class ChoiceNodeView : BaseNodeView
     {
         // Add a new empty option to the DecisionNode data
         DecisionNode.options.Add("New Option");
-        DecisionNode.nextNodes.Add(null);  // Synchronize nextNodes list
+        DecisionNode.nextNodes.Add(null);
         int newIndex = DecisionNode.options.Count - 1;
 
         // Add the corresponding field and output port
