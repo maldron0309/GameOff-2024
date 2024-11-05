@@ -80,14 +80,7 @@ public class DialogGraphView : GraphView
                         outputNodeView.GetNodeData().nextNodes[optionIndex] = inputNodeView.GetNodeData();
                         EditorUtility.SetDirty(outputNodeView.GetNodeData());
                     }
-                    //outputNodeView.GetNodeData().nextNodes.Add(inputNodeView.GetNodeData());
-                    //EditorUtility.SetDirty(outputNodeView.GetNodeData());
-
-                    //// Add context menu to the edge for deleting
-                    //edge.AddManipulator(new EdgeManipulator(edge));
-                    //ColorEdge(edge, Color.red);
                 }
-
             }
         }
 
@@ -367,6 +360,7 @@ public class DialogGraphView : GraphView
         newNode.name = "New Choice Node";
         newNode.position = position;
         newNode.options.Add("Option 1");  // Add a default option
+        newNode.nextNodes.Add(null);
         dialogGraph.nodes.Add(newNode);
 
         // Mark the dialogGraph as dirty so Unity saves the changes

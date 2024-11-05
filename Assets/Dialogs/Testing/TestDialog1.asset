@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Test - Hello, stranger!'
+  m_Name: 'Dialog: Test - This is test for dia...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -19,7 +19,8 @@ MonoBehaviour:
   position: {x: 1001, y: 494}
   isConditionsFolded: 1
   speakerName: Test
-  dialogText: Hello, stranger!
+  dialogText: This is test for dialog System. Try pressing this button again for
+    slightly different dialog.
   speakerImage: {fileID: 0}
   references:
     version: 2
@@ -42,6 +43,8 @@ MonoBehaviour:
   - {fileID: 3839451647177634330}
   - {fileID: -3184806138172557627}
   - {fileID: 2151982123374743382}
+  - {fileID: 6792771764946059038}
+  - {fileID: 6308061745895163762}
   startNodePosition: {x: 251, y: 248}
 --- !u!114 &1196126399182908873
 MonoBehaviour:
@@ -53,7 +56,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Test - It looks like with l...'
+  m_Name: 'Dialog: Test - Hello!'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -63,8 +66,7 @@ MonoBehaviour:
   position: {x: 505, y: 248}
   isConditionsFolded: 1
   speakerName: Test
-  dialogText: It looks like with latest changes in DialogNodeView you accidentally
-    removed input fields from the display
+  dialogText: Hello!
   speakerImage: {fileID: 0}
   references:
     version: 2
@@ -84,10 +86,10 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1414, y: 501}
+  position: {x: 1412, y: 494}
   isConditionsFolded: 1
   actionName: 
-  gameState: {fileID: 0}
+  gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
   gameStateChanges:
   - key: talked_before
     value: yes
@@ -104,16 +106,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Test - You already talked w...'
+  m_Name: 'Dialog: Test - You already pressed ...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: 6792771764946059038}
   conditions:
   - rid: 5200776950582607872
   position: {x: 1001, y: 248}
   isConditionsFolded: 0
   speakerName: Test
-  dialogText: You already talked with me before. Go somewhere else.
+  dialogText: You already pressed this test before. And now dialog is different.
   speakerImage: {fileID: 0}
   references:
     version: 2
@@ -124,3 +127,50 @@ MonoBehaviour:
         key: talked_before
         value: yes
         conditionType: 0
+--- !u!114 &6308061745895163762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Test - Now You should try o...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1981, y: 248}
+  isConditionsFolded: 1
+  speakerName: Test
+  dialogText: Now You should try other tests.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &6792771764946059038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Test - You already pressed ...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 6308061745895163762}
+  conditions: []
+  position: {x: 1464, y: 248}
+  isConditionsFolded: 1
+  speakerName: Test
+  dialogText: You already pressed this test before. And now dialog is different.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

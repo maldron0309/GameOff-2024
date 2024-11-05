@@ -22,25 +22,10 @@ public class GameStateData : ScriptableObject
     public bool TryGetValue(string key, out string value)
     {
         return stateDictionary.TryGetValue(key, out value);
-        //foreach (var entry in stateEntries)
-        //{
-        //    if (entry.key == key)
-        //    {
-        //        value = entry.value;
-        //        return true;
-        //    }
-        //}
-        //value = "";
-        //return false;
     }
 
     public void SetValue(string key, string value)
     {
-        //foreach (var entry in stateEntries)
-        //{
-        //    if (entry.key == key)
-        //        entry.value = value;
-        //}
         if (stateDictionary.ContainsKey(key))
         {
             stateDictionary[key] = value;

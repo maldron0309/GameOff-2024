@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9161164295830193142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Someone - Good!'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1388, y: 514}
+  isConditionsFolded: 1
+  speakerName: Someone
+  dialogText: Good!
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-6673663700960936753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Someone - Hi!
+
+    Can you make a d...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -2940191532926461536}
+  conditions: []
+  position: {x: 310, y: 591}
+  isConditionsFolded: 1
+  speakerName: Someone
+  dialogText: 'Hi!
+
+    Can you make a decision that will affect something?'
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2940191532926461536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a7a094aefc13543a85b93b203c473d, type: 3}
+  m_Name: Decision
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -9161164295830193142}
+  - {fileID: 8976885347399561475}
+  - {fileID: 6136591755178750476}
+  conditions: []
+  position: {x: 827, y: 600}
+  isConditionsFolded: 1
+  options:
+  - yes
+  - no
+  - maybe
+  decisionName: 
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
+  m_Name: TestDialog3
+  m_EditorClassIdentifier: 
+  startNode: {fileID: -6673663700960936753}
+  nodes:
+  - {fileID: -6673663700960936753}
+  - {fileID: -9161164295830193142}
+  - {fileID: -2940191532926461536}
+  - {fileID: 8976885347399561475}
+  - {fileID: 6136591755178750476}
+  startNodePosition: {x: 100, y: 659}
+--- !u!114 &6136591755178750476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Someone - I was expecting "yes...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1358, y: 1022}
+  isConditionsFolded: 1
+  speakerName: Someone
+  dialogText: I was expecting "yes" or "no"!
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &8976885347399561475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Someone - Too bad'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1358, y: 792}
+  isConditionsFolded: 1
+  speakerName: Someone
+  dialogText: Too bad
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

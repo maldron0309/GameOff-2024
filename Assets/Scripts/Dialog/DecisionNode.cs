@@ -7,9 +7,6 @@ public class DecisionNode : BaseDialogNode
     public List<string> options = new List<string>();
     public string decisionName;
 
-    //public override void TriggerEvent(PlayerCharacter player, GameStateData gameState)
-    //{
-    //}
     private void OnValidate()
     {
         UpdateNodeName();
