@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -144,6 +145,22 @@ public abstract class BaseNodeView : Node
 
                 conditionRow.Add(valueFieldRow);
             }
+            if (condition is ItemCondition itemCondition)
+            {
+                ObjectField itemField = new ObjectField("Required Item")
+                {
+                    objectType = typeof(BaseItem),
+                    value = itemCondition.item  // Set current value from the condition
+                };
+
+                itemField.RegisterValueChangedCallback(evt =>
+                {
+                    itemCondition.item = (BaseItem)evt.newValue;
+                    EditorUtility.SetDirty(node);
+                });
+
+                conditionRow.Add(itemField);
+            }
             // Add the horizontal condition row to the foldout
             conditionsFoldout.Add(conditionRow);
         }
@@ -158,12 +175,19 @@ public abstract class BaseNodeView : Node
         // Create a context menu with options to add either StateCondition or AttributeCondition
         GenericMenu menu = new GenericMenu();
 
-        menu.AddItem(new GUIContent("Add State Condition"), false, () =>
+        menu.AddItem(new GUIContent("State Condition"), false, () =>
         {
             StateCondition newStateCondition = new StateCondition();
             node.conditions.Add(newStateCondition);
             EditorUtility.SetDirty(node);  // Mark the node as dirty so the condition is saved
             DisplayConditions(node);  // Refresh the conditions foldout to include the new condition
+        });
+        menu.AddItem(new GUIContent("Item Condition"), false, () =>
+        {
+            ItemCondition newItemCondition = new ItemCondition();
+            node.conditions.Add(newItemCondition);
+            EditorUtility.SetDirty(node);
+            DisplayConditions(node);
         });
 
         // Show the menu at the mouse position
