@@ -13,6 +13,7 @@ public class RoomMovement : MonoBehaviour
 
     Dictionary<string, Sprite> s = new Dictionary<string, Sprite>();
     public GameObject currentRoom;
+    bool canMove;
      
 
     // Start is called before the first frame update
@@ -23,6 +24,8 @@ public class RoomMovement : MonoBehaviour
         s.Add("Left", left);
         s.Add("Down", down);
         s.Add("Locked", locked);
+
+        canMove = true;
     }
 
     // Update is called once per frame
@@ -46,6 +49,10 @@ public class RoomMovement : MonoBehaviour
         {
             directionSign.gameObject.SetActive(false);
         }
+        if(canMove == false)
+        {
+            canMove = true;
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -54,44 +61,60 @@ public class RoomMovement : MonoBehaviour
             directionSign.sprite = s[collision.gameObject.GetComponent<DoorInfo>().dir];
             directionSign.gameObject.SetActive(true);
 
-            if(collision.gameObject.GetComponent<DoorInfo>().dir == "Right")
+            if (canMove == true)
             {
-                if(transform.position.x > collision.gameObject.transform.position.x + 0.1f)
+                
+                if (collision.gameObject.GetComponent<DoorInfo>().dir == "Right")
                 {
-                    transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                    collision.transform.parent.gameObject.SetActive(false);
-                    collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                    currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                    if (transform.position.x > collision.gameObject.transform.position.x + 0.1f)
+                    {
+                        
+                        //StartCoroutine(MoveDelay());
+                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
+                        collision.transform.parent.gameObject.SetActive(false);
+                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
+                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                        canMove = false;
+                    }
                 }
-            }
-            else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Left")
-            {
-                if (transform.position.x < collision.gameObject.transform.position.x - 0.1f)
+                else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Left")
                 {
-                    transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                    collision.transform.parent.gameObject.SetActive(false);
-                    collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                    currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                    if (transform.position.x < collision.gameObject.transform.position.x - 0.1f)
+                    {
+                        
+                        //StartCoroutine(MoveDelay());
+                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
+                        collision.transform.parent.gameObject.SetActive(false);
+                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
+                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                        canMove = false;
+                    }
                 }
-            }
-            else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Up")
-            {
-                if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+                else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Up")
                 {
-                    transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                    collision.transform.parent.gameObject.SetActive(false);
-                    collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                    currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                    if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+                    {
+                        
+                        //StartCoroutine(MoveDelay());
+                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
+                        collision.transform.parent.gameObject.SetActive(false);
+                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
+                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                        canMove = false;
+                    }
                 }
-            }
-            else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Down")
-            {
-                if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+                else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Down")
                 {
-                    transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                    collision.transform.parent.gameObject.SetActive(false);
-                    collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                    currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                    if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+                    {
+                        
+                        //StartCoroutine(MoveDelay());
+                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
+                        collision.transform.parent.gameObject.SetActive(false);
+                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
+                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                        canMove = false;
+                    }
                 }
             }
         }
@@ -100,5 +123,11 @@ public class RoomMovement : MonoBehaviour
             directionSign.sprite = locked;
             directionSign.gameObject.SetActive(true);
         }
+    }
+
+    IEnumerator MoveDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        canMove = true;
     }
 }
