@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
+
     private bool canInteract = false;
     private GameObject interactableObject;
 
@@ -22,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     {
         rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
 
-        if (canInteract && Keyboard.current.eKey.wasPressedThisFrame)
+        if (canInteract && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Debug.Log("Interacting with " + interactableObject.name);
         }
@@ -33,6 +34,7 @@ public class PlayerMove : MonoBehaviour
         moveInput = context.ReadValue<Vector2>();
     }
 
+# region Interact
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Interactable"))
@@ -50,4 +52,5 @@ public class PlayerMove : MonoBehaviour
             interactableObject = null;
         }
     }
+# endregion
 }
