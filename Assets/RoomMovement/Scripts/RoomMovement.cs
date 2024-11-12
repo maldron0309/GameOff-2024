@@ -13,7 +13,7 @@ public class RoomMovement : MonoBehaviour
 
     Dictionary<string, Sprite> s = new Dictionary<string, Sprite>();
     public GameObject currentRoom;
-    bool canMove;
+    public GameObject collidingDoor;
      
 
     // Start is called before the first frame update
@@ -25,33 +25,43 @@ public class RoomMovement : MonoBehaviour
         s.Add("Down", down);
         s.Add("Locked", locked);
 
-        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(collidingDoor != null && collidingDoor.GetComponent<DoorInfo>().locked == false)
+        {
+            if ((collidingDoor.GetComponent<DoorInfo>().dir == "Up" && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
+                || (collidingDoor.GetComponent<DoorInfo>().dir == "Down" && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)))
+                || (collidingDoor.GetComponent<DoorInfo>().dir == "Right" && transform.position.x > collidingDoor.transform.position.x + 0.1f)
+                || (collidingDoor.GetComponent<DoorInfo>().dir == "Left" && transform.position.x < collidingDoor.transform.position.x - 0.1f)
+                )
+            {
+                //StartCoroutine(MoveDelay());
+                transform.position = collidingDoor.GetComponent<DoorInfo>().to.transform.position;
+                collidingDoor.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
+                currentRoom = collidingDoor.GetComponent<DoorInfo>().to.transform.parent.gameObject;
+                collidingDoor.transform.parent.gameObject.SetActive(false);
+            }
+        }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Door")
         {
-            directionSign.sprite = s[collision.gameObject.GetComponent<DoorInfo>().dir];
-            directionSign.gameObject.SetActive(true);
+            collidingDoor = collision.gameObject;
         }
-    }*/
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Door")
         {
             directionSign.gameObject.SetActive(false);
-        }
-        if(canMove == false)
-        {
-            canMove = true;
+            if (collidingDoor == collision.gameObject)
+                collidingDoor = null;
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -59,64 +69,7 @@ public class RoomMovement : MonoBehaviour
         if (collision.gameObject.tag == "Door" && collision.gameObject.GetComponent<DoorInfo>().locked == false)
         {
             directionSign.sprite = s[collision.gameObject.GetComponent<DoorInfo>().dir];
-            directionSign.gameObject.SetActive(true);
-
-            if (canMove == true)
-            {
-                
-                if (collision.gameObject.GetComponent<DoorInfo>().dir == "Right")
-                {
-                    if (transform.position.x > collision.gameObject.transform.position.x + 0.1f)
-                    {
-                        
-                        //StartCoroutine(MoveDelay());
-                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                        collision.transform.parent.gameObject.SetActive(false);
-                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
-                        canMove = false;
-                    }
-                }
-                else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Left")
-                {
-                    if (transform.position.x < collision.gameObject.transform.position.x - 0.1f)
-                    {
-                        
-                        //StartCoroutine(MoveDelay());
-                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                        collision.transform.parent.gameObject.SetActive(false);
-                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
-                        canMove = false;
-                    }
-                }
-                else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Up")
-                {
-                    if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-                    {
-                        
-                        //StartCoroutine(MoveDelay());
-                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                        collision.transform.parent.gameObject.SetActive(false);
-                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
-                        canMove = false;
-                    }
-                }
-                else if (collision.gameObject.GetComponent<DoorInfo>().dir == "Down")
-                {
-                    if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
-                    {
-                        
-                        //StartCoroutine(MoveDelay());
-                        transform.position = collision.gameObject.GetComponent<DoorInfo>().to.transform.position;
-                        collision.transform.parent.gameObject.SetActive(false);
-                        collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
-                        currentRoom = collision.gameObject.GetComponent<DoorInfo>().to.transform.parent.gameObject;
-                        canMove = false;
-                    }
-                }
-            }
+            directionSign.gameObject.SetActive(true);  
         }
         else
         {
@@ -128,6 +81,5 @@ public class RoomMovement : MonoBehaviour
     IEnumerator MoveDelay()
     {
         yield return new WaitForSeconds(1f);
-        canMove = true;
     }
 }
