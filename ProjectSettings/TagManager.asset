@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Item
+  - NPC
   - Interactable
-  - Door
   layers:
   - Default
   - TransparentFX

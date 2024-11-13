@@ -11,9 +11,6 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
-    private bool canInteract = false;
-    private GameObject interactableObject;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,35 +19,10 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
-
-        if (canInteract && Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            Debug.Log("Interacting with " + interactableObject.name);
-        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
     }
-
-# region Interact
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Interactable"))
-        {
-            canInteract = true;
-            interactableObject = collision.gameObject;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Interactable"))
-        {
-            canInteract = false;
-            interactableObject = null;
-        }
-    }
-# endregion
 }
