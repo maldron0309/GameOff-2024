@@ -1,21 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class InteractionHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject interactionUI;
+    [SerializeField] private GameObject interactionUI; // UI for interaction
+    [SerializeField] private DialogGraph dialogGraph;
 
-    private bool canInteract = false;
-    private GameObject interactableObj;
+    private bool canInteract = false; // Can interact flag
+    private GameObject interactableObj; // Current interactable object
 
     private void Start()
     {
-        if (interactionUI != null)
-        {
-            interactionUI.SetActive(false);
-        }
+        interactionUI?.SetActive(false);
     }
 
     private void Update()
@@ -25,12 +21,13 @@ public class InteractionHandler : MonoBehaviour
             if (interactableObj != null)
             {
                 IInteractable interactable = interactableObj.GetComponent<IInteractable>();
-                interactable?.Interact();
-
-                if (interactableObj.CompareTag("Item"))
+                if (interactable is BaseNPC)
                 {
-                    Debug.Log($"Item added to Inventory: {interactableObj.name}");
-                    Destroy(interactableObj);
+                    DialogSystem.instance?.StartDialog(dialogGraph); // Start dialog with NPC
+                }
+                else
+                {
+                    interactable?.Interact(); // Interact with other objects
                 }
             }
         }
@@ -40,8 +37,8 @@ public class InteractionHandler : MonoBehaviour
     {
         if (collision.CompareTag("Interactable"))
         {
-            canInteract = true;
-            interactableObj = collision.gameObject;
+            canInteract = true; 
+            interactableObj = collision.gameObject; // Store interactable object
 
             interactionUI?.SetActive(true);
         }
@@ -52,9 +49,9 @@ public class InteractionHandler : MonoBehaviour
         if (collision.CompareTag("Interactable"))
         {
             canInteract = false;
-            interactableObj = null;
+            interactableObj = null; 
 
-            interactionUI?.SetActive(false);
+            interactionUI?.SetActive(false); 
         }
     }
 }
