@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseNPC : MonoBehaviour, IInteractable
 {
-    public DialogGraph dialog;
+    public DialogGraph dialogGraph;
+
     public void Interact()
     {
-        DialogSystem.instance.StartDialog(dialog);
+        DialogSystem.instance.StartDialog(dialogGraph);
+        Debug.Log("HIIII");
     }
 }

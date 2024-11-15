@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302db6815ea4eda4e8cee6feb8d6324f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: f787b9e8889b9e24aafd4ece27ce220f, type: 2}
+  dialogGraph: {fileID: 11400000, guid: f787b9e8889b9e24aafd4ece27ce220f, type: 2}
 --- !u!1 &242500770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +1165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionUI: {fileID: 1981226487}
+  dialogGraph: {fileID: 0}
 --- !u!114 &773347203
 MonoBehaviour:
   m_ObjectHideFlags: 0
