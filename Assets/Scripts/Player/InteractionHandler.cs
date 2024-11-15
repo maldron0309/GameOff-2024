@@ -27,18 +27,18 @@ public class InteractionHandler : MonoBehaviour
                 IInteractable interactable = interactableObj.GetComponent<IInteractable>();
                 interactable?.Interact();
 
-                if (interactableObj.CompareTag("Item"))
-                {
-                    Debug.Log($"Item added to Inventory: {interactableObj.name}");
-                    Destroy(interactableObj);
-                }
+                //if (interactableObj.CompareTag("Item"))
+                //{
+                //    Debug.Log($"Itemtu vari added to Inventory: {interactableObj.name}");
+                //    Destroy(interactableObj);
+                //}
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Interactable"))
+        if (collision.CompareTag("Interactable") || collision.CompareTag("Item") || collision.CompareTag("NPC"))
         {
             canInteract = true;
             interactableObj = collision.gameObject;
@@ -49,7 +49,7 @@ public class InteractionHandler : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Interactable"))
+        if (collision.gameObject == interactableObj)
         {
             canInteract = false;
             interactableObj = null;

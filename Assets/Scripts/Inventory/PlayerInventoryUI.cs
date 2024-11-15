@@ -65,6 +65,11 @@ public class PlayerInventoryUI : MonoBehaviour
     }
     public void RefreshInventory()
     {
+        if (linkedInventory.items.Count > 0)
+            itemIdx = 0;
+        else
+            itemIdx = -1;
+
         foreach (Transform child in itemsContainer.transform)
         {
             Destroy(child.gameObject);

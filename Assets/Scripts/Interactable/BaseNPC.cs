@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BaseNPC : MonoBehaviour, IInteractable
 {
+    public DialogGraph dialog;
     public void Interact()
     {
-        Debug.Log("Hi");
+        DialogSystem.instance.StartDialog(dialog);
     }
 }
