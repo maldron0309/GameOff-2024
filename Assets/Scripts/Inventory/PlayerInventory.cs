@@ -12,6 +12,7 @@ public class PlayerInventory : MonoBehaviour
     public void AddItem(BaseItem item)
     {
         items.Add(item);
+        PlayerInventoryUI.instance.RefreshInventory();
     }
     public void RemoveItem(BaseItem item)
     {

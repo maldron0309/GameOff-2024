@@ -35,6 +35,6 @@ public class MainMenuUI : MonoBehaviour
     public void StartGame()
     {
         // Change to scene to what is going to be game scene
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("MovingBetweenRooms");
     }
 }
