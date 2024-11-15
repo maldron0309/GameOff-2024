@@ -24,14 +24,13 @@ public class InteractionHandler : MonoBehaviour
         {
             if (interactableObj != null)
             {
+                IInteractable interactable = interactableObj.GetComponent<IInteractable>();
+                interactable?.Interact();
+
                 if (interactableObj.CompareTag("Item"))
                 {
                     Debug.Log($"Item added to Inventory: {interactableObj.name}");
                     Destroy(interactableObj);
-                }
-                else if (interactableObj.CompareTag("NPC"))
-                {
-                    Debug.Log($"Talking to NPC: {interactableObj.name}");
                 }
             }
         }
@@ -44,10 +43,7 @@ public class InteractionHandler : MonoBehaviour
             canInteract = true;
             interactableObj = collision.gameObject;
 
-            if (interactionUI != null)
-            {
-                interactionUI.SetActive(true);
-            }
+            interactionUI?.SetActive(true);
         }
     }
 
@@ -58,10 +54,7 @@ public class InteractionHandler : MonoBehaviour
             canInteract = false;
             interactableObj = null;
 
-            if (interactionUI != null)
-            {
-                interactionUI.SetActive(false);
-            }
+            interactionUI?.SetActive(false);
         }
     }
 }
