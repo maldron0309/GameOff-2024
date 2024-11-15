@@ -17,22 +17,25 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         GameObject curRoom = gameObject.GetComponent<RoomMovement>().currentRoom;
+
+        float offset = curRoom.transform.position.x;
+        float y = curRoom.transform.position.y;
         roomsize = curRoom.transform.Find("Ground").localScale.x;
-        if (((transform.position.x - camsize > -roomsize && transform.position.x < 0) || (transform.position.x + camsize < roomsize && transform.position.x > 0))&& curRoom.transform.Find("Ground").transform.localScale.x>8)
+        if (((transform.position.x - camsize > offset-roomsize && transform.position.x < offset) || (transform.position.x + camsize < offset+roomsize && transform.position.x > offset))&& curRoom.transform.Find("Ground").transform.localScale.x>camsize+2)
         {
-            cam.transform.position = new Vector3(transform.position.x, 0, -10);
+            cam.transform.position = new Vector3(transform.position.x, y, -10);
         }
         else if (curRoom.transform.Find("Ground").transform.localScale.x <= 8)
         {
-            cam.transform.position = new Vector3(0, 0, -10);
+            cam.transform.position = new Vector3(offset, y, -10);
         }
-        else if(transform.position.x < 0)
+        else if(transform.position.x < offset)
         {
-            cam.transform.position = new Vector3(camsize-roomsize, 0, -10);
+            cam.transform.position = new Vector3(camsize-roomsize+offset, y, -10);
         }
-        else if (transform.position.x > 0)
+        else if (transform.position.x > offset)
         {
-            cam.transform.position = new Vector3(roomsize- camsize, 0, -10);
+            cam.transform.position = new Vector3(roomsize- camsize+offset, y, -10);
         }
     }
 }

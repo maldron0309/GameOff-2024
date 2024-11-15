@@ -42,7 +42,7 @@ public class RoomMovement : MonoBehaviour
                 transform.position = collidingDoor.GetComponent<DoorInfo>().to.transform.position;
                 collidingDoor.GetComponent<DoorInfo>().to.transform.parent.gameObject.SetActive(true);
                 currentRoom = collidingDoor.GetComponent<DoorInfo>().to.transform.parent.gameObject;
-                collidingDoor.transform.parent.gameObject.SetActive(false);
+                //collidingDoor.transform.parent.gameObject.SetActive(false);
             }
         }
     }
