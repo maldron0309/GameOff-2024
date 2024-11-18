@@ -29,7 +29,7 @@ public class DialogSystem : MonoBehaviour
 
     void Update()
     {
-        if (dialogWindow.activeInHierarchy && !isDecision && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
+        if (dialogWindow.activeInHierarchy && !isDecision && (Input.GetMouseButtonDown(0) ))
         {
             AdvanceDialog();
         }
@@ -39,7 +39,8 @@ public class DialogSystem : MonoBehaviour
     {
         // might need to disable player charecter movment when dialog is open
         //PlayerCharacter.instance.DisableInteractions();
-        
+        FindAnyObjectByType<PlayerMove>().canMove = false;
+
         dialogWindow.SetActive(true);
         ShowNode(dialogGraph.startNode);
     }
@@ -162,6 +163,7 @@ public class DialogSystem : MonoBehaviour
     void EndDialog()
     {
         dialogWindow.SetActive(false);
+        FindAnyObjectByType<PlayerMove>().canMove = true;
         //PlayerCharacter.instance.EnableInteractions();
         // Re-enable player controls here
     }

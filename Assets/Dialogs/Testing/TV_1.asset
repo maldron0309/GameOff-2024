@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
   m_Name: TV_1
   m_EditorClassIdentifier: 
-  startNode: {fileID: 1592563012271938741}
+  startNode: {fileID: 8534164154554807908}
   nodes:
-  - {fileID: 1592563012271938741}
+  - {fileID: 8534164154554807908}
   startNodePosition: {x: 140, y: 420}
---- !u!114 &1592563012271938741
+--- !u!114 &8534164154554807908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31,7 +31,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 584, y: 447}
+  position: {x: 956, y: 447}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: TV is turned off. I wonder where is the remote.

@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private bool faceRight = true;
+    public bool canMove = true;// use to disable movement
 
     private void Start()
     {
@@ -19,8 +20,12 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
-        if(Mathf.Abs(rb.velocity.x) > 0.01f)
+        if (canMove)
+            rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+        else
+            rb.velocity = Vector2.zero;
+
+        if (Mathf.Abs(rb.velocity.x) > 0.01f)
         {
             anim.Play("Move");
             if (rb.velocity.x > 0 && !faceRight)
