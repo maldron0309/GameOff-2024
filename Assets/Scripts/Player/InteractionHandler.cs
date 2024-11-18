@@ -3,16 +3,8 @@ using UnityEngine.InputSystem;
 
 public class InteractionHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject interactionUI; // UI for interaction
-    [SerializeField] private DialogGraph dialogGraph;
-
     private bool canInteract = false; // Can interact flag
     private GameObject interactableObj; // Current interactable object
-
-    private void Start()
-    {
-        interactionUI?.SetActive(false);
-    }
 
     private void Update()
     {
@@ -32,8 +24,6 @@ public class InteractionHandler : MonoBehaviour
         {
             canInteract = true; 
             interactableObj = collision.gameObject; // Store interactable object
-
-            interactionUI?.SetActive(true);
         }
     }
 
@@ -43,8 +33,6 @@ public class InteractionHandler : MonoBehaviour
         {
             canInteract = false;
             interactableObj = null; 
-
-            interactionUI?.SetActive(false); 
         }
     }
 }
