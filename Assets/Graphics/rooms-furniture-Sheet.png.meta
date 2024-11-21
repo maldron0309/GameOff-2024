@@ -1,0 +1,1416 @@
+fileFormatVersion: 2
+guid: ffd633ef93d4656429f57eccb5d29df3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 133
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d09f5f6dab0b543b8013ef7bba758c
+      internalID: -1720301588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 133
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a179cad81c76f46b12da108b99ae2c
+      internalID: -1689855526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 135
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0ce13d09cd0954899e6f2ea148ca10
+      internalID: -317302248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 135
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956f238d7bcc62445a23160aef3041a7
+      internalID: -1843592547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 166
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cacc369d19b8b42a1ba82e54a87e7e
+      internalID: -2036885177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 151
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0b289ca009abc4c96d2a00b0ae17ff
+      internalID: -1382873124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 100
+        width: 4
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a3f8eb33d88bb45aaa2f3e64cd8d4b
+      internalID: 564034230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 136
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cbcf022d6a0f943b01660dfd91bcac
+      internalID: -1491532623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 97
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3538167502dbca4ca49f277ccce3284
+      internalID: -637268573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 80
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457272c5768dd864996bba2513c9f60d
+      internalID: 282794359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 80
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3753595b6ec754688cbcd92b8fbd80
+      internalID: -650026429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 105
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343f9ad74165d5849907d1db6ec3dbe6
+      internalID: -1783081968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 96
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fee9aaa084e2c54ca46209f5cd2baf2
+      internalID: 984106345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 69
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7b3b8c78af9c14aadf5ff9636e00a3
+      internalID: -1655330389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 75
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfce2d0f48af3fb4eb5433ede67d3714
+      internalID: -1126106955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fccea89ed529de4eb69ace825aa9240
+      internalID: 883972191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 98
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3873b7e07cf61440a3da1310254c5d8
+      internalID: -102093114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 58
+        width: 50
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742ddfeace6e20042955204c3b1c4fd0
+      internalID: 1752014070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 62
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce35ccaf7baafd478be8b723d25ffc1
+      internalID: -1260450216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 78
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c94e38fc794b8f41b7260305dc058ba
+      internalID: -932724916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 50
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4dce77070a65941a76718a52e8de5f
+      internalID: -1809015886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 20
+        width: 25
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbb62a6ab44e8745bec59d8d8be19de
+      internalID: -504591721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 39
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1cc36b2e115a44698037e3bd156dca
+      internalID: -317881048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 61
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11b82fa6ed72ab439a20c428a962fb9
+      internalID: 162881494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 72
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026334de10f1ac248b4d2c225add09be
+      internalID: 483632180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1
+        width: 16
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301c236a063769344856ebec9361637e
+      internalID: 260548906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 47
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4660071b57a6d41839d41c6787b7f2
+      internalID: -263777603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 29
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a16f39a577c30440b1ca949eecccb59
+      internalID: -2018005690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 46
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a28f3f9a1674ed44bff007e5db71eb9
+      internalID: 896216411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 46
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb090e7ad6121f4aa76d6b276814952
+      internalID: -636594393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 32
+        width: 40
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6cc606dd9f75848b89db5baf47ae3c
+      internalID: -1706469248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 49
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b936012142eb09a42a15f202e0fcad8f
+      internalID: -1905317385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 40
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e7e8419196ae547b5d405e8eb34a54
+      internalID: 172848204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb5a68d94a2da1468d7357ebbec656e
+      internalID: 1345935779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9
+        width: 6
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78898c0fb4379040b747c60996423e7
+      internalID: -481344609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 29
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b844e7f8dd2afd0448608d6dfff5d60a
+      internalID: 1162340393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 29
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503e37ad637d6b44dac060e4fd131511
+      internalID: 214128817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 32
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ac9ee4873227d468084aeea1a3643f
+      internalID: 1746490258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 34
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4738315104730f7418a1f00e7982b1b1
+      internalID: 1417604038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 30
+        width: 30
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f32682e10ddef341af6f455cf53d803
+      internalID: -513962699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 25
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9199bd362713ce648b82ccb752b3944d
+      internalID: -1113077646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 15
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0e884666a7584468e339e4bcc2f30e
+      internalID: 1102656559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 13
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707a9119dd987bf40aab3bf88ac8f442
+      internalID: 10782910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 13
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192c52808c565304684d994f2b0d0e8b
+      internalID: -1201058279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 15
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5e77c10a65ef74aa4db3fa183cdaa0
+      internalID: 1443360975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 12
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533ebc49ce44df8458c28bb161429262
+      internalID: 1968226330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 19
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90928c9b8e7ad3f49b1bab5c1776bd08
+      internalID: 940402737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 17
+        width: 33
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c25e6141ef17f41b3c664afad1c154
+      internalID: 1741590347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 10
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d76f75efa315f4aa8a48a3c0d606d6
+      internalID: -999882169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bec04f7308b6e749aca269bca64f8b9
+      internalID: 240751279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 8
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3219a6dc0a8b240ae8577bd8d91188
+      internalID: 589254407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 7
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ea24c01dd1e7b42be10d2a3d7afad6
+      internalID: 356363567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 2
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bd76a9c5893da408b6a42497fa8082
+      internalID: 392042436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3326619563096c44abbacbbd8c2c218
+      internalID: -1552079169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a442839fb6b87419237c5b3c7b3b8f
+      internalID: 294278256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b351c50f06f13704495157bb4aee0684
+      internalID: 1019303423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 100
+        width: 17
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3337e06c74aee408f53d9ea3f9e0ca
+      internalID: 1619017058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 11
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3910fd6aa665694099263b103c3ed80
+      internalID: 1053047521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rooms-furniture-Sheet_0: -1720301588
+      rooms-furniture-Sheet_1: -1689855526
+      rooms-furniture-Sheet_10: -650026429
+      rooms-furniture-Sheet_11: -1783081968
+      rooms-furniture-Sheet_12: 984106345
+      rooms-furniture-Sheet_13: -1655330389
+      rooms-furniture-Sheet_14: -1126106955
+      rooms-furniture-Sheet_15: 883972191
+      rooms-furniture-Sheet_16: -102093114
+      rooms-furniture-Sheet_17: 1752014070
+      rooms-furniture-Sheet_18: -1260450216
+      rooms-furniture-Sheet_19: -932724916
+      rooms-furniture-Sheet_2: -317302248
+      rooms-furniture-Sheet_20: -1809015886
+      rooms-furniture-Sheet_21: -504591721
+      rooms-furniture-Sheet_22: -317881048
+      rooms-furniture-Sheet_23: 162881494
+      rooms-furniture-Sheet_24: 483632180
+      rooms-furniture-Sheet_25: 260548906
+      rooms-furniture-Sheet_26: -263777603
+      rooms-furniture-Sheet_27: -2018005690
+      rooms-furniture-Sheet_28: 896216411
+      rooms-furniture-Sheet_29: -636594393
+      rooms-furniture-Sheet_3: -1843592547
+      rooms-furniture-Sheet_30: -1706469248
+      rooms-furniture-Sheet_31: -1905317385
+      rooms-furniture-Sheet_32: 172848204
+      rooms-furniture-Sheet_33: 1345935779
+      rooms-furniture-Sheet_34: -481344609
+      rooms-furniture-Sheet_35: 1162340393
+      rooms-furniture-Sheet_36: 214128817
+      rooms-furniture-Sheet_37: 1746490258
+      rooms-furniture-Sheet_38: 1417604038
+      rooms-furniture-Sheet_39: -513962699
+      rooms-furniture-Sheet_4: -2036885177
+      rooms-furniture-Sheet_40: -1113077646
+      rooms-furniture-Sheet_41: 1102656559
+      rooms-furniture-Sheet_42: 10782910
+      rooms-furniture-Sheet_43: -1201058279
+      rooms-furniture-Sheet_44: 1443360975
+      rooms-furniture-Sheet_45: 1968226330
+      rooms-furniture-Sheet_46: 940402737
+      rooms-furniture-Sheet_47: 1741590347
+      rooms-furniture-Sheet_48: -999882169
+      rooms-furniture-Sheet_49: 240751279
+      rooms-furniture-Sheet_5: -1382873124
+      rooms-furniture-Sheet_50: 589254407
+      rooms-furniture-Sheet_51: 356363567
+      rooms-furniture-Sheet_52: 392042436
+      rooms-furniture-Sheet_53: -1552079169
+      rooms-furniture-Sheet_54: 294278256
+      rooms-furniture-Sheet_55: 1019303423
+      rooms-furniture-Sheet_56: 1619017058
+      rooms-furniture-Sheet_57: 1053047521
+      rooms-furniture-Sheet_6: 564034230
+      rooms-furniture-Sheet_7: -1491532623
+      rooms-furniture-Sheet_8: -637268573
+      rooms-furniture-Sheet_9: 282794359
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

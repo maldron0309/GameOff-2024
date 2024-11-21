@@ -164,7 +164,5 @@ public class DialogSystem : MonoBehaviour
     {
         dialogWindow.SetActive(false);
         FindAnyObjectByType<PlayerMove>().canMove = true;
-        //PlayerCharacter.instance.EnableInteractions();
-        // Re-enable player controls here
     }
 }

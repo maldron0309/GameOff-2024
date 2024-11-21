@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 3098124286863563338}
   - component: {fileID: 1076278556767635773}
   - component: {fileID: 1541818487283702598}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -359,6 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   anim: {fileID: 944679276753110287}
+  canMove: 1
 --- !u!114 &2839766975208967254
 MonoBehaviour:
   m_ObjectHideFlags: 0
