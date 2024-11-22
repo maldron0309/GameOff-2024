@@ -19,22 +19,27 @@ public class MainMenuUI : MonoBehaviour
         settingsButton.onClick.AddListener(OpenSettings);
         creditsButton.onClick.AddListener(OpenCredits);
         exitButton.onClick.AddListener(ExitGame);
+        BackgroundMusicManager.Instance.PlayMenuTrack();
     }
     public void OpenSettings()
     {
         settigns.OpenSettings();
+        SoundEffectsManager.Instance.PlayButtonPressSound();
     }
     public void OpenCredits()
     {
         credits.OpenCredits();
+        SoundEffectsManager.Instance.PlayButtonPressSound();
     }
     public void ExitGame()
     {
         Application.Quit();
+        SoundEffectsManager.Instance.PlayButtonPressSound();
     }
     public void StartGame()
     {
         // Change to scene to what is going to be game scene
-        SceneManager.LoadScene("MovingBetweenRooms");
+        SceneManager.LoadScene("RoomsAndTiles");
+        SoundEffectsManager.Instance.PlayButtonPressSound();
     }
 }

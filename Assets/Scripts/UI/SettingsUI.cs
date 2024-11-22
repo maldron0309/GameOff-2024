@@ -23,6 +23,7 @@ public class SettingsUI : MonoBehaviour
         soundVolumeSlider.onValueChanged.AddListener(OnSoundVolumeChange);
         musicVolumeSlider.onValueChanged.AddListener(OnMusicVolumeChange);
         backButton.onClick.AddListener(CloseSettings);
+        backButton.onClick.AddListener(SoundEffectsManager.Instance.PlayButtonPressSound);
         CloseSettings();
     }
 

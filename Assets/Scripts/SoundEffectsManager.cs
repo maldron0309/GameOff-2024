@@ -7,9 +7,9 @@ public class SoundEffectsManager : MonoBehaviour
     public static SoundEffectsManager Instance;
 
     public AudioClip buttonPressSound;
-    public AudioClip citySelectionSound;
-    public AudioClip transportSelectionSound;
-    public AudioClip newDaySound;
+    public AudioClip tickSound;
+    public AudioClip rainSound;
+    public AudioClip itemPickupSound;
     public GameSettings gameSettings;
 
     private AudioSource audioSource;
@@ -33,10 +33,18 @@ public class SoundEffectsManager : MonoBehaviour
     {
         UpdateSoundEffectsVolume(gameSettings.soundVolume);
     }
-
     public void PlaySound(AudioClip clip)
     {
+        // play any sound. just pass audio clip
         audioSource.PlayOneShot(clip);
+    }
+    public void PlayButtonPressSound()
+    {
+        audioSource.PlayOneShot(buttonPressSound);
+    }
+    public void PlayTickPressSound()
+    {
+        audioSource.PlayOneShot(buttonPressSound);
     }
     public void UpdateSoundEffectsVolume(float volume)
     {

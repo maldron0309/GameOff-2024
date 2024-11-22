@@ -5,7 +5,9 @@ using UnityEngine;
 public class BackgroundMusicManager : MonoBehaviour
 {
     public static BackgroundMusicManager Instance;
-    public List<AudioClip> backgroundTracks;
+    public AudioClip backgroundTrack;
+    public AudioClip menuTrack;
+    public AudioClip endingTrack;
     private AudioSource audioSource;
     public GameSettings gameSettings;
 
@@ -29,14 +31,14 @@ public class BackgroundMusicManager : MonoBehaviour
     void Start()
     {
         audioSource.volume = gameSettings.musicVolume;
-        PlayRandomTrack();
+        //PlayBackgroundTrack();
     }
 
     void Update()
     {
         if (!audioSource.isPlaying)
         {
-            PlayRandomTrack();
+            PlayBackgroundTrack();
         }
     }
     public void UpdateMusicVolume(float volume)
@@ -44,15 +46,19 @@ public class BackgroundMusicManager : MonoBehaviour
         audioSource.volume = volume;
     }
 
-    private void PlayRandomTrack()
+    public void PlayBackgroundTrack()
     {
-        if (backgroundTracks.Count == 0)
-        {
-            return;
-        }
-
-        int randomIndex = Random.Range(0, backgroundTracks.Count);
-        audioSource.clip = backgroundTracks[randomIndex];
+        audioSource.clip = backgroundTrack;
+        audioSource.Play();
+    }
+    public void PlayMenuTrack()
+    {
+        audioSource.clip = menuTrack;
+        audioSource.Play();
+    }
+    public void PlayEndingTrack()
+    {
+        audioSource.clip = endingTrack;
         audioSource.Play();
     }
 }

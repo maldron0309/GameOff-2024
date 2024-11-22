@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &688511817166654307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4905989102519544024}
+  - component: {fileID: 487684188732305927}
+  - component: {fileID: 7463447215031976496}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4905989102519544024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688511817166654307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.02301, y: -8.5516405, z: 0.026102245}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &487684188732305927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688511817166654307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62d8c11cc139cd4fbc831c2c6989a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundTrack: {fileID: 8300000, guid: 146a0198cc4ff394f91df5c47a2f7264, type: 3}
+  menuTrack: {fileID: 8300000, guid: 6bcaff999f02d0a49a5f8702845d137b, type: 3}
+  endingTrack: {fileID: 8300000, guid: 35fce5de8dddcf141b28fc9490e43312, type: 3}
+  gameSettings: {fileID: 11400000, guid: 2e191959c68823840b7b760983ef8822, type: 2}
+--- !u!114 &7463447215031976496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688511817166654307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded7fb6700da64c4a8522be6a7976f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPressSound: {fileID: 8300000, guid: 60a0bac3b237c104b8c8ad9ddb0dcfd6, type: 3}
+  tickSound: {fileID: 8300000, guid: 60a0bac3b237c104b8c8ad9ddb0dcfd6, type: 3}
+  rainSound: {fileID: 8300000, guid: 6888630965d06e1479f73421ffa8fc18, type: 3}
+  itemPickupSound: {fileID: 8300000, guid: b4c070a4c5cd9ce4987312ab6096451a, type: 3}
+  gameSettings: {fileID: 0}

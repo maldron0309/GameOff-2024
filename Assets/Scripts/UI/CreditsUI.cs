@@ -10,6 +10,7 @@ public class CreditsUI : MonoBehaviour
     void Start()
     {
         backButton.onClick.AddListener(CloseCredits);
+        backButton.onClick.AddListener(SoundEffectsManager.Instance.PlayButtonPressSound);
     }
     public void CloseCredits()
     {

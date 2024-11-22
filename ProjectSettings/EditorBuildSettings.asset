@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MovingBetweenRooms.unity
     guid: 05b030b0aaecd4843807a3f77241069f
+  - enabled: 1
+    path: Assets/Scenes/RoomsAndTiles.unity
+    guid: 11a32edcfb8395841af3bf47c4da2565
   m_configObjects: {}
