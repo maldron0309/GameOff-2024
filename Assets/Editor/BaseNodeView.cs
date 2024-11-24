@@ -63,6 +63,10 @@ public abstract class BaseNodeView : Node
         {
             SetPositionAndMarkDirty(choiceNodeView.DecisionNode, newPos);
         }
+        else if (this is DoActionsNodeView doActionsNodeView)
+        {
+            SetPositionAndMarkDirty(doActionsNodeView.DoActionsNode, newPos);
+        }
     }
     // Displays conditions (State and Attribute) for a given node
     protected void DisplayConditions(BaseDialogNode node)

@@ -169,6 +169,13 @@ public class DialogGraphView : GraphView
                 nodeView.SetPosition(new Rect(position, new Vector2(200, 150)));
                 AddElement(nodeView);
             }
+            else if (savedNode is DoActionsNode doActionsNode)
+            {
+                nodeView = new DoActionsNodeView(doActionsNode);
+                nodeView.SetPosition(new Rect(position, new Vector2(200, 150)));
+                AddElement(nodeView);
+            }
+
             if (nodeView != null)
             {
                 AddElement(nodeView);
@@ -311,7 +318,35 @@ public class DialogGraphView : GraphView
             evt.menu.AppendAction("Add Dialog Node", action => AddDialogNode(mousePosition));
             evt.menu.AppendAction("Add Modify State Node", action => AddModifyStateNode(mousePosition));
             evt.menu.AppendAction("Add Choice Node", action => AddChoiceNode(mousePosition));
+            evt.menu.AppendAction("Add Do Actions Node", action => AddNode<DoActionsNode>(mousePosition));  // Add DoActionsNode
+            evt.menu.AppendAction("Add Do Actions Node2", action => AddDoAcctionsNode(mousePosition));  // Add DoActionsNode
         }
+    }
+
+    private void AddNode<T>(Vector2 position) where T : BaseDialogNode, new()
+    {
+        T newNode = new T { position = position };
+        dialogGraph.nodes.Add(newNode);
+        EditorUtility.SetDirty(dialogGraph);
+        LoadGraph(dialogGraph);  // Refresh graph to display the new node
+    }
+    private void AddDoAcctionsNode(Vector2 position)
+    {
+        // Create a new ChoiceNode scriptable object
+        DoActionsNode newNode = ScriptableObject.CreateInstance<DoActionsNode>();
+        newNode.name = "Do Actions";
+        newNode.position = position;
+        newNode.nextNodes.Add(null);
+        dialogGraph.nodes.Add(newNode);
+
+        // Mark the dialogGraph as dirty so Unity saves the changes
+        AssetDatabase.AddObjectToAsset(newNode, dialogGraph);
+        EditorUtility.SetDirty(dialogGraph);
+
+        // Create the node view and add it to the graph
+        DoActionsNodeView nodeView = new DoActionsNodeView(newNode);
+        nodeView.SetPosition(new Rect(position, new Vector2(200, 150)));
+        AddElement(nodeView);
     }
 
     // Add Dialog Node

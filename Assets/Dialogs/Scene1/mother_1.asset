@@ -1,5 +1,57 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7029460941013632125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 7704747887207184839}
+  - {fileID: 5828307654623075312}
+  - {fileID: 3721317692816670076}
+  conditions: []
+  position: {x: 337, y: 615}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2065648644448866133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 4547935604323008577}
+  conditions: []
+  position: {x: 1666, y: 858}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
+  gameStateChanges:
+  - key: ask_mom_1
+    value: yes
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,11 +64,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
   m_Name: mother_1
   m_EditorClassIdentifier: 
-  startNode: {fileID: 3721317692816670076}
+  startNode: {fileID: -7029460941013632125}
   nodes:
   - {fileID: 3721317692816670076}
   - {fileID: 8992386022294973222}
-  startNodePosition: {x: 138, y: 501}
+  - {fileID: -7029460941013632125}
+  - {fileID: 7704747887207184839}
+  - {fileID: 3881370909016502230}
+  - {fileID: 5828307654623075312}
+  - {fileID: -2065648644448866133}
+  - {fileID: 1100080257021812498}
+  - {fileID: 4547935604323008577}
+  startNodePosition: {x: 137, y: 615}
+--- !u!114 &1100080257021812498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1683, y: 446}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
+  gameStateChanges:
+  - key: ask_mom_2
+    value: yes
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &3721317692816670076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,24 +111,155 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Hi, mother!
-
-    Can I go...'
+  m_Name: 'Dialog: Girl - Mom, can I go outsid...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: 8992386022294973222}
-  conditions: []
-  position: {x: 495, y: 501}
-  isConditionsFolded: 1
+  conditions:
+  - rid: 5200777416200945665
+  - rid: 5200777416200945666
+  position: {x: 748, y: 1005}
+  isConditionsFolded: 0
   speakerName: Girl
-  dialogText: 'Hi, mother!
-
-    Can I go outside? I want to play with my friends.'
+  dialogText: Mom, can I go outside? I'm bored.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777416200945665
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: ask_mom_1
+        value: no
+        conditionType: 0
+    - rid: 5200777416200945666
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: meet_friend_1
+        value: no
+        conditionType: 0
+--- !u!114 &3881370909016502230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - No! You are very sic...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 1100080257021812498}
+  conditions: []
+  position: {x: 1256, y: 446}
+  isConditionsFolded: 0
+  speakerName: Mother
+  dialogText: No! You are very sick! You must stay home today!
   speakerImage: {fileID: 0}
   references:
     version: 2
     RefIds: []
+--- !u!114 &4547935604323008577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2fd06040ab1d42bbf246fe518fcd2, type: 3}
+  m_Name: Do Actions
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2248.065, y: 858.00006}
+  isConditionsFolded: 1
+  actionObjectName: ShowFriend1
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &5828307654623075312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Please, stay in side...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions:
+  - rid: 5200777416200945667
+  - rid: 5200777416200945668
+  position: {x: 748, y: 716}
+  isConditionsFolded: 0
+  speakerName: Mother
+  dialogText: Please, stay in side for today.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777416200945667
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: ask_mom_1
+        value: yes
+        conditionType: 0
+    - rid: 5200777416200945668
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: meet_friend_1
+        value: no
+        conditionType: 0
+--- !u!114 &7704747887207184839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Mom! My friend is ca...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 3881370909016502230}
+  conditions:
+  - rid: 5200777416200945669
+  - rid: 5200777416200945670
+  position: {x: 748, y: 446}
+  isConditionsFolded: 0
+  speakerName: Girl
+  dialogText: Mom! My friend is calling me to play. Please, let me go outside. I
+    don't feel that bad.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777416200945669
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: ask_mom_1
+        value: yes
+        conditionType: 0
+    - rid: 5200777416200945670
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: meet_friend_1
+        value: yes
+        conditionType: 0
 --- !u!114 &8992386022294973222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,17 +272,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
   m_Name: 'Dialog: Mother - No, dear!
 
-    You are ve...'
+    You are si...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: -2065648644448866133}
   conditions: []
-  position: {x: 1008, y: 501}
+  position: {x: 1240, y: 1005}
   isConditionsFolded: 1
   speakerName: Mother
   dialogText: 'No, dear!
 
-    You are very sick. Please, stay in side for today.'
+    You are sick. Please, stay in side for today.'
   speakerImage: {fileID: 0}
   references:
     version: 2

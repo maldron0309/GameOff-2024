@@ -60,6 +60,10 @@ public class DialogSystem : MonoBehaviour
         {
             PerformActionNode(actionNode);
         }
+        else if (currentNode is DoActionsNode doActionNode)
+        {
+            PerformAllActions(doActionNode);
+        }
     }
 
     void ShowDialogNode(DialogNode dialogNode)
@@ -123,6 +127,11 @@ public class DialogSystem : MonoBehaviour
     void PerformActionNode(ModifyStateNode actionNode)
     {
         actionNode.TriggerEvent();
+        AdvanceDialog();
+    }
+    void PerformAllActions(DoActionsNode actionNode)
+    {
+        actionNode.Trigger();
         AdvanceDialog();
     }
 

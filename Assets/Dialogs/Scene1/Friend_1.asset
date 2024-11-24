@@ -45,7 +45,7 @@ MonoBehaviour:
   actionName: 
   gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
   gameStateChanges:
-  - key: meed_friend_1
+  - key: meet_friend_1
     value: yes
   references:
     version: 2
@@ -78,7 +78,7 @@ MonoBehaviour:
     - rid: 5200777416200945664
       type: {class: StateCondition, ns: , asm: Assembly-CSharp}
       data:
-        key: meed_friend_1
+        key: meet_friend_1
         value: no
         conditionType: 0
 --- !u!114 &11400000
@@ -117,7 +117,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 746, y: 645}
+  position: {x: 734, y: 706}
   isConditionsFolded: 1
   speakerName: Friend
   dialogText: 'What are you waiting for?
