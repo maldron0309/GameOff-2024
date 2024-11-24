@@ -19,3 +19,9 @@ MonoBehaviour:
     value: no
   - key: got_key
     value: no
+  - key: meed_friend_1
+    value: no
+  - key: ask_mom_1
+    value: no
+  - key: ask_mom_2
+    value: no
