@@ -17,9 +17,21 @@ public class ActionsContainer : MonoBehaviour
     }
     public void ProcessActions()
     {
+        // activate while inside dialog
         foreach (var item in actions)
         {
             item.ActivateEffect();
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // ActivateObject on collision while outside dialog
+        if (collision.CompareTag("Player"))
+        {
+            foreach (var item in actions)
+            {
+                item.ActivateEffect();
+            }
         }
     }
 }

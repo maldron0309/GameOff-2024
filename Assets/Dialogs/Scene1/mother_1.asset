@@ -42,7 +42,7 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 4547935604323008577}
   conditions: []
-  position: {x: 1666, y: 858}
+  position: {x: 1644, y: 1005}
   isConditionsFolded: 1
   actionName: 
   gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
@@ -91,7 +91,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1683, y: 446}
+  position: {x: 1711, y: 431}
   isConditionsFolded: 1
   actionName: 
   gameState: {fileID: 11400000, guid: dbc9182a5eea67049a544ce62b06b023, type: 2}
@@ -158,7 +158,10 @@ MonoBehaviour:
   position: {x: 1256, y: 446}
   isConditionsFolded: 0
   speakerName: Mother
-  dialogText: No! You are very sick! You must stay home today!
+  dialogText: 'No! You are very sick! You must stay home today!
+
+    Please, go to
+    your room and take a rest!'
   speakerImage: {fileID: 0}
   references:
     version: 2
@@ -178,7 +181,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 2248.065, y: 858.00006}
+  position: {x: 2182, y: 1005}
   isConditionsFolded: 1
   actionObjectName: ShowFriend1
   references:
