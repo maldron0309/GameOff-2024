@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Hmm... I think I had...'
+  m_Name: 'Dialog: Girl - My Friend is still w...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes: []
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Did mom just locked ...'
+  m_Name: 'Dialog: Girl - Did mom just lock th...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -45,7 +45,7 @@ MonoBehaviour:
   position: {x: 820, y: 410}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'Did mom just locked the door from outside?
+  dialogText: 'Did mom just lock the door from outside?
 
     She really wants me
     to rest.'
