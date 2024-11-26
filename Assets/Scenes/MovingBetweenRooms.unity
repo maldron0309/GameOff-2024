@@ -396,6 +396,7 @@ MonoBehaviour:
   dir: Right
   to: {fileID: 766696770}
   locked: 0
+  keyItem: {fileID: 0}
 --- !u!61 &89845155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3868,6 +3869,7 @@ MonoBehaviour:
   dir: Up
   to: {fileID: 89845153}
   locked: 0
+  keyItem: {fileID: 0}
 --- !u!61 &766696773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3999,6 +4001,7 @@ MonoBehaviour:
   dir: Right
   to: {fileID: 1706084884}
   locked: 0
+  keyItem: {fileID: 0}
 --- !u!61 &815985866
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4735,7 +4738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dir: Right
   to: {fileID: 1241543938}
-  locked: 0
+  locked: 1
+  keyItem: {fileID: 11400000, guid: 8124c800655da2e4bb268302f9d3353a, type: 2}
 --- !u!61 &995820182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5198,6 +5202,7 @@ MonoBehaviour:
   dir: Left
   to: {fileID: 995820179}
   locked: 0
+  keyItem: {fileID: 0}
 --- !u!61 &1241543941
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6810,6 +6815,7 @@ MonoBehaviour:
   dir: Down
   to: {fileID: 815985864}
   locked: 0
+  keyItem: {fileID: 0}
 --- !u!61 &1706084887
 BoxCollider2D:
   m_ObjectHideFlags: 0
