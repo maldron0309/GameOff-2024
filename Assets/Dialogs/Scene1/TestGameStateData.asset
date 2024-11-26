@@ -27,3 +27,5 @@ MonoBehaviour:
     value: no
   - key: found_box
     value: no
+  - key: found_music_box
+    value: no

@@ -1,0 +1,367 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7919066893300405685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a7a094aefc13543a85b93b203c473d, type: 3}
+  m_Name: Decision
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -3743374527627812141}
+  - {fileID: -3233914284061794842}
+  - {fileID: 1967630498577960851}
+  - {fileID: 1929138804469972396}
+  conditions: []
+  position: {x: 996.4501, y: 444.46005}
+  isConditionsFolded: 1
+  options:
+  - Top shelf
+  - Middle shelf
+  - Lower shelf
+  - I am done here
+  decisionName: 
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-7286154391692840129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Whre should I look?'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -7919066893300405685}
+  conditions: []
+  position: {x: 621.2101, y: 366.00006}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Whre should I look?
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-5039281316058150229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Hey! What''s in a pot...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5639188636003832338}
+  conditions:
+  - rid: 5200777470330273792
+  position: {x: 1757, y: 557}
+  isConditionsFolded: 0
+  speakerName: Girl
+  dialogText: Hey! What's in a pot?
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777470330273792
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: found_music_box
+        value: no
+        conditionType: 0
+--- !u!114 &-4353336486700300172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Strange... I think I...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -7286154391692840129}
+  conditions: []
+  position: {x: 1706.5801, y: 77.39008}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Strange... I think I used to reach it.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-3743374527627812141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - I can''t reach that h...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -4353336486700300172}
+  conditions: []
+  position: {x: 1391.5801, y: 329.39008}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: "I can't reach that high. \nDoesn't seem like there is anything anyway."
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-3233914284061794842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Mom''s old cactus? I''...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -7286154391692840129}
+  conditions: []
+  position: {x: 1316, y: 1034}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Mom's old cactus? I'm not touching that
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2543135942924628861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2fd06040ab1d42bbf246fe518fcd2, type: 3}
+  m_Name: Do Actions
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2934.96, y: 572}
+  isConditionsFolded: 1
+  actionObjectName: ReceiveMusicBox
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-1552941695030435679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -2543135942924628861}
+  conditions: []
+  position: {x: 2407, y: 557}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges:
+  - key: found_music_box
+    value: yes
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
+  m_Name: LivingroomShelfs
+  m_EditorClassIdentifier: 
+  startNode: {fileID: 6087282529391610383}
+  nodes:
+  - {fileID: 6087282529391610383}
+  - {fileID: -7286154391692840129}
+  - {fileID: -7919066893300405685}
+  - {fileID: -3743374527627812141}
+  - {fileID: -3233914284061794842}
+  - {fileID: -4353336486700300172}
+  - {fileID: 1967630498577960851}
+  - {fileID: -5039281316058150229}
+  - {fileID: 5639188636003832338}
+  - {fileID: -2543135942924628861}
+  - {fileID: -1552941695030435679}
+  - {fileID: 3250198409294755736}
+  - {fileID: 1929138804469972396}
+  startNodePosition: {x: 100, y: 100}
+--- !u!114 &1929138804469972396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1392, y: 779}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &1967630498577960851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girld - Some story book. but...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -5039281316058150229}
+  - {fileID: 3250198409294755736}
+  conditions: []
+  position: {x: 1392, y: 557.00006}
+  isConditionsFolded: 1
+  speakerName: Girld
+  dialogText: Some story book. but I've already read them.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3250198409294755736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Nothing else interes...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions:
+  - rid: 5200777470330273793
+  position: {x: 1747.9502, y: 811.9002}
+  isConditionsFolded: 0
+  speakerName: Girl
+  dialogText: Nothing else interesting here
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777470330273793
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: found_music_box
+        value: yes
+        conditionType: 0
+--- !u!114 &5639188636003832338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Wow. a Music box.
+
+    Ha...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -1552941695030435679}
+  conditions: []
+  position: {x: 2085, y: 557}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'Wow. a Music box.
+
+    Have I seen it before. seems familiar I should
+    try playing it on the table'
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &6087282529391610383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Maybe I can find som...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -7286154391692840129}
+  conditions: []
+  position: {x: 220.37003, y: 366.00006}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'Maybe I can find something interesting here.
+
+'
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
