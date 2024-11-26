@@ -6,13 +6,22 @@ public class PasswordBox : BaseBox
     [SerializeField] private GameObject passwordUI; 
     [SerializeField] private LockController lockController; 
     [SerializeField] private string correctPassword; 
-    [SerializeField] private TMP_Text resultText; 
+
+    private bool isPasswordUIActive = false; 
 
     public override void Interact()
     {
         base.Interact();
         PasswordManager.Instance.SetCurrentPasswordBox(this); 
         ShowPasswordUI(); 
+    }
+
+    private void Update()
+    {
+        if (isPasswordUIActive && Input.GetKeyDown(KeyCode.Return))
+        {
+            CheckPassword();
+        }
     }
 
     public void CheckPassword()
@@ -30,11 +39,11 @@ public class PasswordBox : BaseBox
         {
             OpenBox(); 
             passwordUI.SetActive(false); 
+            isPasswordUIActive = false; 
             Debug.Log("The password is correct! The box has been opened.");
         }
         else
         {
-            resultText.text = "Fail"; 
             Debug.Log("The password is incorrect.");
         }
     }
@@ -42,5 +51,6 @@ public class PasswordBox : BaseBox
     private void ShowPasswordUI()
     {
         passwordUI.SetActive(true); 
+        isPasswordUIActive = true;
     }
 }
