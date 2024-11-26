@@ -25,3 +25,5 @@ MonoBehaviour:
     value: no
   - key: ask_mom_2
     value: no
+  - key: found_box
+    value: no

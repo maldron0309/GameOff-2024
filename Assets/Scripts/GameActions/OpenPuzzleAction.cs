@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenPuzzleAction : BaseAction
+public class OpenPuzzleAction : MonoBehaviour, IInteractable
 {
-    // Start is called before the first frame update
+    public GameObject puzzle;
     void Start()
     {
 
     }
-    public override void ActivateEffect()
+
+    public void Interact()
     {
-        
+        puzzle.SetActive(true);
     }
 }

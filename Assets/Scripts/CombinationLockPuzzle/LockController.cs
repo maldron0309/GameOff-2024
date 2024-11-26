@@ -12,7 +12,6 @@ public class LockController : MonoBehaviour
 
     bool changing = false;
 
-    public PlayerMove playerMove;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +22,6 @@ public class LockController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerMove != null) playerMove.canMove = false;
-
         if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && changing == false)
         {
             currentSlot -= 1;
@@ -50,6 +47,10 @@ public class LockController : MonoBehaviour
             slotValues[currentSlot] -= 1;
             if (slotValues[currentSlot] < 0) { slotValues[currentSlot] = 9; }
         }
+        if (Input.GetKeyDown(KeyCode.Q) && changing == false)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public int currentCode()
@@ -60,14 +61,14 @@ public class LockController : MonoBehaviour
     IEnumerator changeNumberUp(int slot)
     {
         changing = true;
-        if (slots[currentSlot].transform.Find("Numbers").transform.position.y <= -3.45)
+        if (slots[currentSlot].transform.Find("Numbers").transform.localPosition.y <= -3.45)
         {
             slots[currentSlot].transform.Find("Numbers").transform.localPosition = new Vector3(0, 3.45f, 0);
         }
 
         for (int i = 0; i < 7; i++)
         {
-            slots[currentSlot].transform.Find("Numbers").transform.position -= new Vector3(0, 0.1f, 0);
+            slots[currentSlot].transform.Find("Numbers").transform.localPosition -= new Vector3(0, 0.1f, 0);
             yield return new WaitForSeconds(0.05f);
         }
         changing = false;
@@ -76,14 +77,14 @@ public class LockController : MonoBehaviour
     IEnumerator changeNumberDown(int slot)
     {
         changing = true;
-        if (slots[currentSlot].transform.Find("Numbers").transform.position.y >= 3.45)
+        if (slots[currentSlot].transform.Find("Numbers").transform.localPosition.y >= 3.45)
         {
             slots[currentSlot].transform.Find("Numbers").transform.localPosition = new Vector3(0, -3.45f, 0);
         }
 
         for (int i = 0; i < 7; i++)
         {
-            slots[currentSlot].transform.Find("Numbers").transform.position += new Vector3(0, 0.1f, 0);
+            slots[currentSlot].transform.Find("Numbers").transform.localPosition += new Vector3(0, 0.1f, 0);
             yield return new WaitForSeconds(0.05f);
         }
         changing = false;
@@ -91,6 +92,10 @@ public class LockController : MonoBehaviour
 
     private void OnDisable()
     {
-        if (playerMove != null) playerMove.canMove = true;      
+        PlayerMove.instance.canMove = true;      
+    }
+    private void OnEnable()
+    {
+        PlayerMove.instance.canMove = false;
     }
 }

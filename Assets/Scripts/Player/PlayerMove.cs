@@ -6,12 +6,17 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+    public static PlayerMove instance;
     [SerializeField] private float moveSpeed = 5f;
     public Animator anim;
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private bool faceRight = true;
     public bool canMove = true;// use to disable movement
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

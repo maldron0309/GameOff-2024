@@ -1,5 +1,158 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9086781007378094004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - A box with a numbers...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -6198637150614021663}
+  conditions:
+  - rid: 5200777445622153216
+  position: {x: 1550, y: 395}
+  isConditionsFolded: 0
+  speakerName: Girl
+  dialogText: A box with a numbers lock. Did I hid a spare key here? I should try
+    to open it at the desk
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777445622153216
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: found_box
+        value: no
+        conditionType: 0
+--- !u!114 &-7243923652168426467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1751, y: 893}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-6353222889658887231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl nothing else here - '
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1550, y: 634.5}
+  isConditionsFolded: 1
+  speakerName: Girl nothing else here
+  dialogText: 
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-6198637150614021663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 2403974612368624448}
+  conditions: []
+  position: {x: 1865, y: 395}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges:
+  - key: found_box
+    value: yes
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2842093946919805507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -9086781007378094004}
+  - {fileID: -6353222889658887231}
+  conditions: []
+  position: {x: 1288, y: 522.5}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2596117666282111905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Nothing but socks he...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5262426918617522862}
+  conditions: []
+  position: {x: 1181, y: 228}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Nothing but socks here
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,6 +165,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
   m_Name: LookInTheCloset
   m_EditorClassIdentifier: 
-  startNode: {fileID: 0}
-  nodes: []
-  startNodePosition: {x: 100, y: 100}
+  startNode: {fileID: 5262426918617522862}
+  nodes:
+  - {fileID: 5262426918617522862}
+  - {fileID: 9168462597769816983}
+  - {fileID: -2596117666282111905}
+  - {fileID: 6916804178256329730}
+  - {fileID: -9086781007378094004}
+  - {fileID: -6353222889658887231}
+  - {fileID: 2403974612368624448}
+  - {fileID: -7243923652168426467}
+  - {fileID: -2842093946919805507}
+  - {fileID: -6198637150614021663}
+  startNodePosition: {x: 138, y: 419}
+--- !u!114 &2403974612368624448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2fd06040ab1d42bbf246fe518fcd2, type: 3}
+  m_Name: Do Actions
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2326, y: 395}
+  isConditionsFolded: 1
+  actionObjectName: ReceiveBox
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &5262426918617522862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Where should I look?'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 9168462597769816983}
+  conditions: []
+  position: {x: 365, y: 452}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Where should I look?
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &6916804178256329730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Lots of old makeup h...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5262426918617522862}
+  conditions: []
+  position: {x: 1218, y: 912}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Lots of old makeup here. I wonder why.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &9168462597769816983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a7a094aefc13543a85b93b203c473d, type: 3}
+  m_Name: Decision
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -2596117666282111905}
+  - {fileID: -2842093946919805507}
+  - {fileID: 6916804178256329730}
+  - {fileID: -7243923652168426467}
+  conditions: []
+  position: {x: 810, y: 506}
+  isConditionsFolded: 1
+  options:
+  - Upper shelf
+  - Middle shelt
+  - Lower shelf
+  - I'm done here
+  decisionName: 
+  references:
+    version: 2
+    RefIds: []

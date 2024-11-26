@@ -3,22 +3,22 @@ using TMPro;
 
 public class PasswordBox : BaseBox
 {
-    [SerializeField] private GameObject passwordUI; 
     [SerializeField] private LockController lockController; 
-    [SerializeField] private string correctPassword; 
+    [SerializeField] private string correctPassword;
+    public AudioClip correctCombinationSound;
+    public AudioClip wrongCombinationSound;
+    public ActionsContainer onSuccessActions;
 
-    private bool isPasswordUIActive = false; 
 
     public override void Interact()
     {
         base.Interact();
-        PasswordManager.Instance.SetCurrentPasswordBox(this); 
-        ShowPasswordUI(); 
+        //PasswordManager.Instance.SetCurrentPasswordBox(this); 
     }
 
     private void Update()
     {
-        if (isPasswordUIActive && Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E))
         {
             CheckPassword();
         }
@@ -38,19 +38,15 @@ public class PasswordBox : BaseBox
         if (inputPassword == correctPasswordInt)
         {
             OpenBox(); 
-            passwordUI.SetActive(false); 
-            isPasswordUIActive = false; 
             Debug.Log("The password is correct! The box has been opened.");
+            SoundEffectsManager.Instance.PlaySound(correctCombinationSound);
+            onSuccessActions.ProcessActions();
+            gameObject.SetActive(false);
         }
         else
         {
             Debug.Log("The password is incorrect.");
+            SoundEffectsManager.Instance.PlaySound(wrongCombinationSound);
         }
-    }
-
-    private void ShowPasswordUI()
-    {
-        passwordUI.SetActive(true); 
-        isPasswordUIActive = true;
     }
 }

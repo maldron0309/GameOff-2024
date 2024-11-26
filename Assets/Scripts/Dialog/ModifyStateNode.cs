@@ -13,7 +13,10 @@ public class ModifyStateNode : BaseDialogNode
     {
         foreach (var entry in gameStateChanges)
         {
-            gameState.SetValue(entry.key, entry.value);
+            if (gameState != null)
+                gameState.SetValue(entry.key, entry.value);
+            else
+                DialogSystem.instance.gameData.SetValue(entry.key, entry.value);
         }
     }
     private void OnValidate()

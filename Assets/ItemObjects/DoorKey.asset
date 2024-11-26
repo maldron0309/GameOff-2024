@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingameName: Door key
   description: This unlock outside door. However, the door is usually open already.
-  icon: {fileID: 21300000, guid: 7ec67c8c884f2eb4393b7b3400b68bfe, type: 3}
+  icon: {fileID: 287996012, guid: b5ae3f8729644684ebc72570f887d3af, type: 3}
