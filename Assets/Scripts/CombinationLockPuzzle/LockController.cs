@@ -11,6 +11,9 @@ public class LockController : MonoBehaviour
     [SerializeField] GameObject highlight;
 
     bool changing = false;
+
+    public PlayerMove playerMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,8 @@ public class LockController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerMove != null) playerMove.canMove = false;
+
         if((Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && changing == false)
         {
             currentSlot -= 1;
@@ -82,5 +87,10 @@ public class LockController : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
         changing = false;
+    }
+
+    private void OnDisable()
+    {
+        if (playerMove != null) playerMove.canMove = true;      
     }
 }
