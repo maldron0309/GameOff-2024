@@ -23,4 +23,8 @@ public class PlayerInventory : MonoBehaviour
     {
         return items[idx];
     }
+    public bool HasItem(BaseItem item)
+    {
+        return items.Contains(item);
+    }
 }

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07984071ec5b96f49a327cb48ac77f67, type: 3}
-  m_Name: MusicBox
+  m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
+  m_Name: Founda picture
   m_EditorClassIdentifier: 
-  ingameName: Music Box
-  description: This is the key for my room.
-  icon: {fileID: -1858335898, guid: b5ae3f8729644684ebc72570f887d3af, type: 3}
+  startNode: {fileID: 0}
+  nodes: []
+  startNodePosition: {x: 100, y: 100}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingameName: Lever
   description: This is the key for my room.
-  icon: {fileID: 21300000, guid: 84e8e3c3e78af934cb01a76711748d14, type: 3}
+  icon: {fileID: 1171880655, guid: b5ae3f8729644684ebc72570f887d3af, type: 3}

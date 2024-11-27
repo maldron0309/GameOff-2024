@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6648752066148294899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Oh my God! what are ...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5194271073140802672}
+  conditions: []
+  position: {x: 342, y: 205}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'Oh my God! what are you doing!
+
+    Could could fall!'
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
+  m_Name: MomInStoreroom
+  m_EditorClassIdentifier: 
+  startNode: {fileID: -6648752066148294899}
+  nodes:
+  - {fileID: -6648752066148294899}
+  - {fileID: 5194271073140802672}
+  - {fileID: 2858880114791999754}
+  startNodePosition: {x: 131, y: 205}
+--- !u!114 &2858880114791999754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Oh, Alright! I can''t...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1198, y: 205}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: Oh, Alright! I can't to too angry at you. But please, take a rest for
+    this time.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &5194271073140802672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - It''s ok, mom I got w...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 2858880114791999754}
+  conditions: []
+  position: {x: 782, y: 205}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'It''s ok, mom I got what I wanted.
+
+    I will go to rest room now.'
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

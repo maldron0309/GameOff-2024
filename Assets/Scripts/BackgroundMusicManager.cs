@@ -61,4 +61,8 @@ public class BackgroundMusicManager : MonoBehaviour
         audioSource.clip = endingTrack;
         audioSource.Play();
     }
+    public void StopBGM()
+    {
+        audioSource.Stop();
+    }
 }

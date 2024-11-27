@@ -125,7 +125,7 @@ MonoBehaviour:
   nextNodes:
   - {fileID: -4353336486700300172}
   conditions: []
-  position: {x: 1391.5801, y: 329.39008}
+  position: {x: 1407, y: 286}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: "I can't reach that high. \nDoesn't seem like there is anything anyway."
@@ -247,7 +247,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1392, y: 779}
+  position: {x: 1422, y: 812}
   isConditionsFolded: 1
   actionName: 
   gameState: {fileID: 0}
@@ -272,7 +272,7 @@ MonoBehaviour:
   - {fileID: -5039281316058150229}
   - {fileID: 3250198409294755736}
   conditions: []
-  position: {x: 1392, y: 557.00006}
+  position: {x: 1407, y: 526}
   isConditionsFolded: 1
   speakerName: Girld
   dialogText: Some story book. but I've already read them.

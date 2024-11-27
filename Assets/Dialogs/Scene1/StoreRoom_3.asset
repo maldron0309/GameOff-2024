@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6200775984436834023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -438772755706400184}
+  - {fileID: 4943221903263959148}
+  conditions: []
+  position: {x: 281, y: 242}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-5799760678669250210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - It is too high for m...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 4740492889198447461}
+  conditions: []
+  position: {x: 874, y: 242}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: It is too high for me to reach though. And I don't see any ladder here.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-554212418503750747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2fd06040ab1d42bbf246fe518fcd2, type: 3}
+  m_Name: Do Actions
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2111, y: 249}
+  isConditionsFolded: 0
+  actionObjectName: LookForChair
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-438772755706400184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Something tells me i...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -5799760678669250210}
+  conditions:
+  - rid: 5200777491234160640
+  position: {x: 493, y: 242}
+  isConditionsFolded: 0
+  speakerName: Girl
+  dialogText: 'Something tells me it is up there on top of that shelf.
+
+    Why do
+    I know that? As if I put it there myself...'
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5200777491234160640
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: need_for_chair
+        value: no
+        conditionType: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
+  m_Name: StoreRoom_3
+  m_EditorClassIdentifier: 
+  startNode: {fileID: -6200775984436834023}
+  nodes:
+  - {fileID: -438772755706400184}
+  - {fileID: -5799760678669250210}
+  - {fileID: 4740492889198447461}
+  - {fileID: -6200775984436834023}
+  - {fileID: 4943221903263959148}
+  - {fileID: 5323854815003559051}
+  - {fileID: -554212418503750747}
+  startNodePosition: {x: 110, y: 100}
+--- !u!114 &4740492889198447461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Maybe I can use some...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5323854815003559051}
+  conditions: []
+  position: {x: 1254, y: 242}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Maybe I can use something else instead, like a chair.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &4943221903263959148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Maybe I can use some...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 493, y: 489}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Maybe I can use something else instead, like a chair.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &5323854815003559051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -554212418503750747}
+  conditions: []
+  position: {x: 1611, y: 249}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges:
+  - key: need_for_chair
+    value: yes
+  references:
+    version: 2
+    RefIds: []

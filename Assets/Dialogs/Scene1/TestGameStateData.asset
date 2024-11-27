@@ -27,5 +27,7 @@ MonoBehaviour:
     value: no
   - key: found_box
     value: no
+  - key: need_for_chair
+    value: no
   - key: found_music_box
     value: no
