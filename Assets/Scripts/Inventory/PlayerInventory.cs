@@ -11,6 +11,7 @@ public class PlayerInventory : MonoBehaviour
     }
     public void AddItem(BaseItem item)
     {
+        SoundEffectsManager.Instance.PlayPickItemSound();
         items.Add(item);
         PlayerInventoryUI.instance.RefreshInventory();
     }

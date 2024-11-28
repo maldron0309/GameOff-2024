@@ -46,6 +46,10 @@ public class SoundEffectsManager : MonoBehaviour
     {
         audioSource.PlayOneShot(buttonPressSound);
     }
+    public void PlayPickItemSound()
+    {
+        audioSource.PlayOneShot(itemPickupSound);
+    }
     public void UpdateSoundEffectsVolume(float volume)
     {
         audioSource.volume = volume;

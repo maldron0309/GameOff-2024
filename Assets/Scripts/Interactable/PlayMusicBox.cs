@@ -6,13 +6,23 @@ public class PlayMusicBox : MonoBehaviour, IInteractable
 {
     public DialogGraph dialog;
     public AudioClip music;
+    public BaseItem pictureItem;
+    public BaseItem musicBoxItem;
+    public BaseItem leverItem;
+    public GameObject MotherOldLocation;
+    public GameObject MotherNextLoaction;
+    public GameObject MirrorInteraction;
+    public GameObject musicBoxObj;
     public void Interact()
     {
         StartCoroutine(PlayBox()) ;
     }
     public IEnumerator PlayBox()
     {
-        gameObject.SetActive(false);
+        PlayerInventory inventory = FindAnyObjectByType<PlayerInventory>();
+        musicBoxObj.SetActive(true);
+        inventory.RemoveItem(musicBoxItem);
+        inventory.RemoveItem(leverItem);
         PlayerMove player = FindAnyObjectByType<PlayerMove>();
         player.canMove = false;
         BackgroundMusicManager.Instance.StopBGM();
@@ -20,11 +30,16 @@ public class PlayMusicBox : MonoBehaviour, IInteractable
 
         yield return new WaitForSeconds(10);
 
-
         BackgroundMusicManager.Instance.PlayBackgroundTrack();
         player.canMove = true;
 
+        inventory.AddItem(pictureItem);
         DialogSystem.instance.StartDialog(dialog);
+        yield return new WaitForSeconds(1);
+        MotherOldLocation.SetActive(false);
+        MotherNextLoaction.SetActive(true);
+        MirrorInteraction.SetActive(true);
+        gameObject.SetActive(false);
     }
     
 }
