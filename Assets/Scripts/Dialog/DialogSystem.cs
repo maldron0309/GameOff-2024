@@ -72,6 +72,7 @@ public class DialogSystem : MonoBehaviour
         speakerNameText.text = dialogNode.speakerName;
         dialogText.text = dialogNode.dialogText;
         speakerImage.sprite = dialogNode.speakerImage;
+        speakerImage.gameObject.SetActive(speakerImage.sprite != null);
 
         isDecision = false;
         decisionPanel.SetActive(false);

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -14,7 +15,7 @@ public class DialogNodeView : BaseNodeView
     public DialogNodeView(DialogNode dialogNode)
     {
         this.DataNode = dialogNode;
-        this.title = "Dialog Node";// dialogNode.speakerName + ": " + DataNode.dialogText.Substring(0, Mathf.Min(DataNode.dialogText.Length, 10)) + "...";
+        this.title = "Dialog Node";
         this.style.width = 300;
 
         InitializePorts();  // Initialize input and output ports
@@ -41,6 +42,19 @@ public class DialogNodeView : BaseNodeView
             dialogNode.dialogText = evt.newValue;
         });
         mainContainer.Add(dialogTextField);
+
+        // ObjectField for selecting speakerImage sprite
+        ObjectField spriteField = new ObjectField("Speaker Image")
+        {
+            objectType = typeof(Sprite),
+            value = DataNode.speakerImage  // Load the current sprite
+        };
+        spriteField.RegisterValueChangedCallback(evt =>
+        {
+            DataNode.speakerImage = (Sprite)evt.newValue;
+            EditorUtility.SetDirty(DataNode);  // Mark the DataNode as dirty to save changes
+        });
+        mainContainer.Add(spriteField);
 
         // Add button to add new output port
         Button addOutputButton = new Button(() => AddNewOutputPort()) { text = "Add Output" };
