@@ -254,7 +254,7 @@ TextureImporter:
         serializedVersion: 2
         x: 298
         y: 100
-        width: 4
+        width: 3
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1328,7 +1328,7 @@ TextureImporter:
         width: 48
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1336,6 +1336,27 @@ TextureImporter:
       bones: []
       spriteID: f3910fd6aa665694099263b103c3ed80
       internalID: 1053047521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rooms-furniture-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 100
+        width: 3
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69386ab38d16f7e42944a105e1424519
+      internalID: -771842702
       vertices: []
       indices: 
       edges: []
@@ -1405,6 +1426,7 @@ TextureImporter:
       rooms-furniture-Sheet_55: 1019303423
       rooms-furniture-Sheet_56: 1619017058
       rooms-furniture-Sheet_57: 1053047521
+      rooms-furniture-Sheet_58: -771842702
       rooms-furniture-Sheet_6: 564034230
       rooms-furniture-Sheet_7: -1491532623
       rooms-furniture-Sheet_8: -637268573
