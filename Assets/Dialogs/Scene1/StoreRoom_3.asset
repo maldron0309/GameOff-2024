@@ -88,7 +88,7 @@ MonoBehaviour:
   conditions:
   - rid: 5200777491234160640
   position: {x: 493, y: 242}
-  isConditionsFolded: 0
+  isConditionsFolded: 1
   speakerName: Girl
   dialogText: 'Something tells me it is up there on top of that shelf.
 

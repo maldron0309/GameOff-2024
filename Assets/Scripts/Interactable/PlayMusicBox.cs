@@ -13,9 +13,16 @@ public class PlayMusicBox : MonoBehaviour, IInteractable
     public GameObject MotherNextLoaction;
     public GameObject MirrorInteraction;
     public GameObject musicBoxObj;
+
+    bool playing = false;
     public void Interact()
     {
-        StartCoroutine(PlayBox()) ;
+        if(playing == false)
+        {
+            StartCoroutine(PlayBox());
+            playing = true;
+        }
+        
     }
     public IEnumerator PlayBox()
     {
