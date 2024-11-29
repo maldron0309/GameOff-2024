@@ -61,14 +61,14 @@ public class LockController : MonoBehaviour
     IEnumerator changeNumberUp(int slot)
     {
         changing = true;
-        if (slots[currentSlot].transform.Find("Numbers").transform.localPosition.y <= -3.45)
+        if (slots[currentSlot].transform.Find("Numbers").transform.localPosition.y <= 1.95)
         {
-            slots[currentSlot].transform.Find("Numbers").transform.localPosition = new Vector3(0, 3.45f, 0);
+            slots[currentSlot].transform.Find("Numbers").transform.localPosition = new Vector3(0, 7.1f, 0);
         }
 
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 10; i++)
         {
-            slots[currentSlot].transform.Find("Numbers").transform.localPosition -= new Vector3(0, 0.1f, 0);
+            slots[currentSlot].transform.Find("Numbers").transform.localPosition -= new Vector3(0, 0.0525f, 0);
             yield return new WaitForSeconds(0.05f);
         }
         changing = false;
@@ -77,14 +77,14 @@ public class LockController : MonoBehaviour
     IEnumerator changeNumberDown(int slot)
     {
         changing = true;
-        if (slots[currentSlot].transform.Find("Numbers").transform.localPosition.y >= 3.45)
+        if (slots[currentSlot].transform.Find("Numbers").transform.localPosition.y >= 7.08)
         {
-            slots[currentSlot].transform.Find("Numbers").transform.localPosition = new Vector3(0, -3.45f, 0);
+            slots[currentSlot].transform.Find("Numbers").transform.localPosition = new Vector3(0, 1.85f, 0);
         }
 
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 10; i++)
         {
-            slots[currentSlot].transform.Find("Numbers").transform.localPosition += new Vector3(0, 0.1f, 0);
+            slots[currentSlot].transform.Find("Numbers").transform.localPosition += new Vector3(0, 0.0525f, 0);
             yield return new WaitForSeconds(0.05f);
         }
         changing = false;
