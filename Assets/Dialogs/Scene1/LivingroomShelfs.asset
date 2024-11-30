@@ -358,9 +358,7 @@ MonoBehaviour:
   position: {x: 220.37003, y: 366.00006}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'Maybe I can find something interesting here.
-
-'
+  dialogText: Maybe I can find something interesting here.
   speakerImage: {fileID: 0}
   references:
     version: 2

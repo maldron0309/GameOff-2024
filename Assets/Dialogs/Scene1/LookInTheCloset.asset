@@ -32,29 +32,6 @@ MonoBehaviour:
         key: found_box
         value: no
         conditionType: 0
---- !u!114 &-7243923652168426467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
-  m_Name: Action
-  m_EditorClassIdentifier: 
-  nodeName: 
-  nextNodes: []
-  conditions: []
-  position: {x: 1751, y: 893}
-  isConditionsFolded: 1
-  actionName: 
-  gameState: {fileID: 0}
-  gameStateChanges: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!114 &-6353222889658887231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +47,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1550, y: 634.5}
+  position: {x: 1550.4, y: 657.6}
   isConditionsFolded: 1
   speakerName: Girl nothing else here
   dialogText: 
@@ -153,6 +130,77 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &-2074422700954974694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5262426918617522862}
+  - {fileID: -835116777462795712}
+  conditions: []
+  position: {x: 162.44002, y: 505.60004}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-1691687708800250759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Not right now.'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1180.7999, y: 1056.4677}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Not right now.
+  speakerImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-835116777462795712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Nothing to see here.'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 392.80008, y: 790.7602}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Nothing to see here.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
   m_Name: LookInTheCloset
   m_EditorClassIdentifier: 
-  startNode: {fileID: 5262426918617522862}
+  startNode: {fileID: -2074422700954974694}
   nodes:
   - {fileID: 5262426918617522862}
   - {fileID: 9168462597769816983}
@@ -174,10 +222,12 @@ MonoBehaviour:
   - {fileID: -9086781007378094004}
   - {fileID: -6353222889658887231}
   - {fileID: 2403974612368624448}
-  - {fileID: -7243923652168426467}
   - {fileID: -2842093946919805507}
   - {fileID: -6198637150614021663}
-  startNodePosition: {x: 138, y: 419}
+  - {fileID: -1691687708800250759}
+  - {fileID: -835116777462795712}
+  - {fileID: -2074422700954974694}
+  startNodePosition: {x: -30.880005, y: 504.80005}
 --- !u!114 &2403974612368624448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,15 +264,22 @@ MonoBehaviour:
   nodeName: 
   nextNodes:
   - {fileID: 9168462597769816983}
-  conditions: []
-  position: {x: 365, y: 452}
-  isConditionsFolded: 1
+  conditions:
+  - rid: 4292162024351465473
+  position: {x: 411.20004, y: 521.6}
+  isConditionsFolded: 0
   speakerName: Girl
   dialogText: Where should I look?
   speakerImage: {fileID: 0}
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4292162024351465473
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: found_box
+        value: no
+        conditionType: 0
 --- !u!114 &6916804178256329730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +296,7 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 5262426918617522862}
   conditions: []
-  position: {x: 1218, y: 912}
+  position: {x: 1180.8, y: 756.8}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: Lots of old makeup here. I wonder why.
@@ -264,10 +321,10 @@ MonoBehaviour:
   - {fileID: -2596117666282111905}
   - {fileID: -2842093946919805507}
   - {fileID: 6916804178256329730}
-  - {fileID: -7243923652168426467}
+  - {fileID: -1691687708800250759}
   conditions: []
   position: {x: 810, y: 506}
-  isConditionsFolded: 1
+  isConditionsFolded: 0
   options:
   - Upper shelf
   - Middle shelt

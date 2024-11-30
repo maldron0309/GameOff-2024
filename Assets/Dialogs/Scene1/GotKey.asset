@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girls - I got the key! Now I...'
+  m_Name: 'Dialog: Girl - I got the key! Now I...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 406, y: 312}
+  position: {x: 363.19998, y: 100}
   isConditionsFolded: 1
-  speakerName: Girls
+  speakerName: Girl
   dialogText: I got the key! Now I can leave the room.
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

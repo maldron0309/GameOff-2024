@@ -15,7 +15,56 @@ MonoBehaviour:
   startNode: {fileID: 8534164154554807908}
   nodes:
   - {fileID: 8534164154554807908}
-  startNodePosition: {x: 140, y: 420}
+  - {fileID: 164445593706399184}
+  - {fileID: 4661046173115417883}
+  startNodePosition: {x: 158.73601, y: 420}
+--- !u!114 &164445593706399184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - 120643'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 4661046173115417883}
+  conditions: []
+  position: {x: 734.39996, y: 420}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 120643
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &4661046173115417883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Looks like a date of...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1121.6, y: 420}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Looks like a date of some sort. Day, month and year.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &8534164154554807908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,22 +75,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Diary - I''ve put my secret i...'
+  m_Name: 'Dialog: Girl - It''s my diary. There...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: 164445593706399184}
   conditions: []
-  position: {x: 577, y: 420}
+  position: {x: 380, y: 420}
   isConditionsFolded: 0
-  speakerName: Diary
-  dialogText: 'I''ve put my secret inside the box
-
-
-    Right numbers are: 312814
-
-
-'
-  speakerImage: {fileID: 0}
+  speakerName: Girl
+  dialogText: It's my diary. There's a note inside it.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
