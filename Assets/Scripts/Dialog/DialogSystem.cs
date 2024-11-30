@@ -173,6 +173,7 @@ public class DialogSystem : MonoBehaviour
     void EndDialog()
     {
         dialogWindow.SetActive(false);
+        decisionPanel.SetActive(false);
         FindAnyObjectByType<PlayerMove>().canMove = true;
     }
 }
