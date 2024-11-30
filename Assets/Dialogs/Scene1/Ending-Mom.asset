@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Why do you looks so ...'
+  m_Name: 'Dialog: Girl - Why do you look so d...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -19,7 +19,7 @@ MonoBehaviour:
   position: {x: 1461.6, y: 249.59999}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Why do you looks so different in here?
+  dialogText: Why do you look so different in here?
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
@@ -67,10 +67,10 @@ MonoBehaviour:
   position: {x: 1803.5999, y: 249.59999}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: '*Giggling* Well, we still looks alike right?
+  dialogText: '*Giggling* Well, we still look alike right?
 
-    You should have
-    look yourself in the mirror sometime.'
+    You should have look
+    yourself in the mirror sometime.'
   speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
@@ -142,7 +142,7 @@ MonoBehaviour:
   speakerName: Mother
   dialogText: 'I haven''t seen this for so long.
 
-    You still looks so beautiful
+    You still look so beautiful
     even after all this time.'
   speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
@@ -190,7 +190,7 @@ MonoBehaviour:
   speakerName: Mother
   dialogText: 'Anyway, I''m already done here.
 
-    Let''s have some nice meal together.'
+    Let''s have a nice meal together.'
   speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2

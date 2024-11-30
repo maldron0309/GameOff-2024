@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - But why is this pict...'
+  m_Name: 'Dialog: Girl - But why does this pi...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -71,7 +71,7 @@ MonoBehaviour:
   position: {x: 1202.4, y: 368.8}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: But why is this picture looks so old?
+  dialogText: But why does this picture look so old?
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - It''s my picture with...'
+  m_Name: 'Dialog: Girl - It''s a picture with ...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -161,7 +161,7 @@ MonoBehaviour:
   position: {x: 838.4, y: 368.8}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: It's my picture with mom. But-
+  dialogText: It's a picture with mom. But-
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2

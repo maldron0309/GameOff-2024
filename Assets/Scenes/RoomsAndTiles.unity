@@ -17112,6 +17112,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1715028050}
     m_Modifications:
+    - target: {fileID: 3840082385271231169, guid: adef87c0f5b4c7c4586e92e7295d3a84, type: 3}
+      propertyPath: dialogGraph
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5555315366468694957, guid: adef87c0f5b4c7c4586e92e7295d3a84, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.29403728
@@ -28364,6 +28368,22 @@ PrefabInstance:
       propertyPath: items.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 3c714b4875a365f4d841ec52636282d6, type: 2}
+    - target: {fileID: 2839766975208967254, guid: a0a360e9f91a3fa44a27fa45695f360c, type: 3}
+      propertyPath: up
+      value: 
+      objectReference: {fileID: 21300000, guid: 530683529b964fc4bbc0487be0b17d6e, type: 3}
+    - target: {fileID: 2839766975208967254, guid: a0a360e9f91a3fa44a27fa45695f360c, type: 3}
+      propertyPath: down
+      value: 
+      objectReference: {fileID: 21300000, guid: 95d3325f041ff0a45ab02310529d7215, type: 3}
+    - target: {fileID: 2839766975208967254, guid: a0a360e9f91a3fa44a27fa45695f360c, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 21300000, guid: 170318108870a7a4a83ce89e5ad640ef, type: 3}
+    - target: {fileID: 2839766975208967254, guid: a0a360e9f91a3fa44a27fa45695f360c, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 21300000, guid: ccc06c10907929d44a2cb9f35708ea30, type: 3}
     - target: {fileID: 2839766975208967254, guid: a0a360e9f91a3fa44a27fa45695f360c, type: 3}
       propertyPath: currentRoom
       value: 

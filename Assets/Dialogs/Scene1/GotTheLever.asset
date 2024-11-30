@@ -18,7 +18,7 @@ MonoBehaviour:
   position: {x: 331, y: 100}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Yes, I got the lever! I know it was here.
+  dialogText: Yes, I got the lever! I knew it was here.
   speakerImage: {fileID: 0}
   references:
     version: 2

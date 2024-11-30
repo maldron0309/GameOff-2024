@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
   m_Name: 'Dialog: Grandma - Oh my!
 
-    Does my face ...'
+    Did my face a...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -74,7 +74,7 @@ MonoBehaviour:
   speakerName: Grandma
   dialogText: 'Oh my!
 
-    Does my face always have this much wrinkle.'
+    Did my face always have this many wrinkles.'
   speakerImage: {fileID: 1798960078, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2

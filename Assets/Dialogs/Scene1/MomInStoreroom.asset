@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - I need to get someth...'
+  m_Name: 'Dialog: Girl - I needed to get some...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -165,7 +165,7 @@ MonoBehaviour:
   position: {x: 780.80005, y: 225.44}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: I need to get something up there.
+  dialogText: I needed to get something from up there.
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2

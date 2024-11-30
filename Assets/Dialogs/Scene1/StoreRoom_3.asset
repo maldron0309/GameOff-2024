@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - I think I see it som...'
+  m_Name: 'Dialog: Girl - I think I''ve seen it...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes: []
@@ -145,7 +145,7 @@ MonoBehaviour:
   position: {x: 859.19995, y: 501.6}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: I think I see it somewhere before.
+  dialogText: I think I've seen it somewhere before.
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
