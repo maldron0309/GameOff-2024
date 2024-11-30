@@ -21,7 +21,7 @@ MonoBehaviour:
   dialogText: 'Just a bunch of books.
 
     Got to look elsewhere.'
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

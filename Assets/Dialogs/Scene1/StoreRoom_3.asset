@@ -45,7 +45,7 @@ MonoBehaviour:
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: It is too high for me to reach though. And I don't see any ladder here.
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -94,7 +94,7 @@ MonoBehaviour:
 
     Why do
     I know that? As if I put it there myself...'
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds:
@@ -125,7 +125,31 @@ MonoBehaviour:
   - {fileID: 4943221903263959148}
   - {fileID: 5323854815003559051}
   - {fileID: -554212418503750747}
+  - {fileID: 507347154480056134}
   startNodePosition: {x: 110, y: 100}
+--- !u!114 &507347154480056134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - I think I see it som...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 859.19995, y: 501.6}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: I think I see it somewhere before.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &4740492889198447461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,11 +166,11 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 5323854815003559051}
   conditions: []
-  position: {x: 1254, y: 242}
+  position: {x: 1253.6, y: 241.59999}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: Maybe I can use something else instead, like a chair.
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -163,16 +187,24 @@ MonoBehaviour:
   m_Name: 'Dialog: Girl - Maybe I can use some...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
-  conditions: []
-  position: {x: 493, y: 489}
-  isConditionsFolded: 1
+  nextNodes:
+  - {fileID: 507347154480056134}
+  conditions:
+  - rid: 4292162035027804160
+  position: {x: 492.80002, y: 488.8}
+  isConditionsFolded: 0
   speakerName: Girl
   dialogText: Maybe I can use something else instead, like a chair.
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 4292162035027804160
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: need_for_chair
+        value: yes
+        conditionType: 0
 --- !u!114 &5323854815003559051
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6231502173816974439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - ....... Is this........'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 61055564680060545}
+  conditions: []
+  position: {x: 1569.6001, y: 368.8}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: ....... Is this........ Really my picture?
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &-6147840959352097490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,24 +34,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - What''s this? There w...'
+  m_Name: 'Dialog: Girl - What''s this?
+
+    There w...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: -5226196184564752742}
+  - {fileID: 8435638321583228179}
   conditions: []
-  position: {x: 537, y: 352}
+  position: {x: 492, y: 368.8}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'What''s this? There was a picture inside?
+  dialogText: 'What''s this?
 
-    It looks so old. I
-    wonder who this is.'
-  speakerImage: {fileID: 0}
+    There was a picture inside?'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
---- !u!114 &-5226196184564752742
+--- !u!114 &-5357179957630163176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,18 +62,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - This might be my gra...'
+  m_Name: 'Dialog: Girl - But why is this pict...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: -6231502173816974439}
   conditions: []
-  position: {x: 1044, y: 352}
+  position: {x: 1202.4, y: 368.8}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'This might be my grandma maybe.
-
-    I should ask my mom.'
-  speakerImage: {fileID: 0}
+  dialogText: But why is this picture looks so old?
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -67,5 +91,78 @@ MonoBehaviour:
   startNode: {fileID: -6147840959352097490}
   nodes:
   - {fileID: -6147840959352097490}
-  - {fileID: -5226196184564752742}
+  - {fileID: 8435638321583228179}
+  - {fileID: -5357179957630163176}
+  - {fileID: -6231502173816974439}
+  - {fileID: 61055564680060545}
+  - {fileID: 2996315378006805646}
   startNodePosition: {x: 229, y: 369}
+--- !u!114 &61055564680060545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - I''ll try to ask mom.'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 2996315378006805646}
+  conditions: []
+  position: {x: 1949.6001, y: 368.8}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: I'll try to ask mom.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &2996315378006805646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2fd06040ab1d42bbf246fe518fcd2, type: 3}
+  m_Name: Do Actions
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2328, y: 390.4}
+  isConditionsFolded: 1
+  actionObjectName: FindingTheTruth
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &8435638321583228179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - It''s my picture with...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -5357179957630163176}
+  conditions: []
+  position: {x: 838.4, y: 368.8}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: It's my picture with mom. But-
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []

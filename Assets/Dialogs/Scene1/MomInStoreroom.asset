@@ -19,10 +19,34 @@ MonoBehaviour:
   position: {x: 342, y: 205}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: 'Oh my God! what are you doing!
+  dialogText: 'Oh my God! what are you doing up there!
 
-    Could could fall!'
-  speakerImage: {fileID: 0}
+    You could fall!'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-3280950001046509519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Never mind that. At ...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 3325133551810699812}
+  conditions: []
+  position: {x: 1986.0326, y: 204.7999}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: Never mind that. At least you're not hurt.
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -43,7 +67,34 @@ MonoBehaviour:
   - {fileID: -6648752066148294899}
   - {fileID: 5194271073140802672}
   - {fileID: 2858880114791999754}
+  - {fileID: 375134933185329676}
+  - {fileID: -3280950001046509519}
+  - {fileID: 3325133551810699812}
   startNodePosition: {x: 131, y: 205}
+--- !u!114 &375134933185329676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - ......Sorry.'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -3280950001046509519}
+  conditions: []
+  position: {x: 1602.2521, y: 204.8}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: ......Sorry.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2858880114791999754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,17 +105,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Mother - Oh, Alright! I can''t...'
+  m_Name: 'Dialog: Mother - How are you able to ...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: 375134933185329676}
   conditions: []
   position: {x: 1198, y: 205}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: Oh, Alright! I can't to too angry at you. But please, take a rest for
-    this time.
-  speakerImage: {fileID: 0}
+  dialogText: 'How are you able to do this at your age?
+
+    You could hurt yourself.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3325133551810699812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Just leave this room...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2332, y: 204.8}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'Just leave this room for now.
+
+    I''ll clean up the mess.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -78,19 +156,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - It''s ok, mom I got w...'
+  m_Name: 'Dialog: Girl - I need to get someth...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: 2858880114791999754}
   conditions: []
-  position: {x: 782, y: 205}
+  position: {x: 780.80005, y: 225.44}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'It''s ok, mom I got what I wanted.
-
-    I will go to rest room now.'
-  speakerImage: {fileID: 0}
+  dialogText: I need to get something up there.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

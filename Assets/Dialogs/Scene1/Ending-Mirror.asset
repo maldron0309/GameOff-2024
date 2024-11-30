@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7966289083490622739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Hey, what are you do...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 3225554994196587795}
+  conditions: []
+  position: {x: 1789.4663, y: 355.99997}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'Hey, what are you doing in front of the mirror.
+
+    *Giggling* Are
+    you worried about your wrinkly face now?'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &-7412781635664465767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,7 +37,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Grandma - Oh, how could I forg...'
+  m_Name: 'Dialog: Gir-randma - Oh......'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -18,11 +45,9 @@ MonoBehaviour:
   conditions: []
   position: {x: 1073, y: 356}
   isConditionsFolded: 1
-  speakerName: Grandma
-  dialogText: 'Oh, how could I forget.
-
-    I''m not the little girl anymore'
-  speakerImage: {fileID: 0}
+  speakerName: Gir-randma
+  dialogText: Oh......
+  speakerImage: {fileID: 1798960078, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -36,20 +61,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Grandma - And my "mom", she is...'
+  m_Name: 'Dialog: Grandma - Oh my!
+
+    Does my face ...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: 654817296131704743}
+  - {fileID: -7966289083490622739}
   conditions: []
-  position: {x: 1403, y: 356}
+  position: {x: 1397.5999, y: 356}
   isConditionsFolded: 1
   speakerName: Grandma
-  dialogText: 'And my "mom", she is  my dauther
+  dialogText: 'Oh my!
 
-    Oh, me and my memory... He he
-    he.'
-  speakerImage: {fileID: 0}
+    Does my face always have this much wrinkle.'
+  speakerImage: {fileID: 1798960078, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -63,7 +89,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - That music box... wa...'
+  m_Name: 'Dialog: Girl - The picture.......'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -72,10 +98,8 @@ MonoBehaviour:
   position: {x: 745, y: 356}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'That music box... was it mine
-
-    And that picture? Is it me?'
-  speakerImage: {fileID: 0}
+  dialogText: The picture.......
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -98,6 +122,8 @@ MonoBehaviour:
   - {fileID: -7412781635664465767}
   - {fileID: -7061204194821915020}
   - {fileID: 654817296131704743}
+  - {fileID: -7966289083490622739}
+  - {fileID: 3225554994196587795}
   startNodePosition: {x: 261, y: 356}
 --- !u!114 &654817296131704743
 MonoBehaviour:
@@ -114,9 +140,35 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1737, y: 356}
+  position: {x: 2597.472, y: 348.80002}
   isConditionsFolded: 1
   actionObjectName: Ending-Mirror
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &3225554994196587795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Anyway, I''m already ...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 654817296131704743}
+  conditions: []
+  position: {x: 2177.767, y: 355.99997}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'Anyway, I''m already done now.
+
+    Let''s have a nice meal together.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -130,7 +182,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Wait a minute... wha...'
+  m_Name: 'Dialog: Girl - This is.....'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -139,8 +191,8 @@ MonoBehaviour:
   position: {x: 422, y: 356}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Wait a minute... what's that face in the mirror?
-  speakerImage: {fileID: 0}
+  dialogText: This is.....
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

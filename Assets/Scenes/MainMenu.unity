@@ -912,15 +912,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5587298070192469424, guid: 19a9421e4d4eda84d804591696335692, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -395
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254134106825582140, guid: 19a9421e4d4eda84d804591696335692, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1031.1119
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254134106825582140, guid: 19a9421e4d4eda84d804591696335692, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758715947469739902, guid: 19a9421e4d4eda84d804591696335692, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9213871985847932707, guid: 19a9421e4d4eda84d804591696335692, type: 3}
       propertyPath: m_text
-      value: '<size=40>Art assets</size>
+      value: '<size=30>Art assets</size>
 
         plainnrice
 
 
-
-        <size=40>Programming</size>
+        <size=30>Programming</size>
 
         BryenGX
         (discord, itch.io)
@@ -930,12 +945,15 @@ PrefabInstance:
         Maldron
 
 
-
-        <size=40>Sound/Music</size>
+        <size=30>Sound/Music</size>
 
         Moon
 
-'
+
+        <size=30>Game
+        Design</size>
+
+        kik ^_^'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

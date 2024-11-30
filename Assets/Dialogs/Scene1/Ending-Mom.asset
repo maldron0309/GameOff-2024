@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Ha! That''s strange y...'
+  m_Name: 'Dialog: Girl - Why do you looks so ...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: -1105120224717345228}
   conditions: []
-  position: {x: 1135, y: 250}
+  position: {x: 1461.6, y: 249.59999}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Ha! That's strange you look so different here
-  speakerImage: {fileID: 0}
+  dialogText: Why do you looks so different in here?
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -43,8 +43,8 @@ MonoBehaviour:
   position: {x: 432, y: 250}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Mom, do you know who is this in the picture
-  speakerImage: {fileID: 0}
+  dialogText: Mom, do you know who is this in the picture?
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -58,17 +58,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Mother - Haha! You too, dear!'
+  m_Name: 'Dialog: Mother - *Giggling* Well, we ...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: 3399301621502106749}
+  - {fileID: 6368722752454673819}
   conditions: []
-  position: {x: 1488, y: 250}
+  position: {x: 1803.5999, y: 249.59999}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: Haha! You too, dear!
-  speakerImage: {fileID: 0}
+  dialogText: '*Giggling* Well, we still looks alike right?
+
+    You should have
+    look yourself in the mirror sometime.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -91,6 +94,8 @@ MonoBehaviour:
   - {fileID: -6011115148798678568}
   - {fileID: -1105120224717345228}
   - {fileID: 3399301621502106749}
+  - {fileID: 2852529369403388983}
+  - {fileID: 6368722752454673819}
   startNodePosition: {x: 250, y: 250}
 --- !u!114 &1812351835305139183
 MonoBehaviour:
@@ -102,17 +107,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Mother - Don''t you recognize ...'
+  m_Name: 'Dialog: Mother - Oh, this picture.......'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 2852529369403388983}
+  conditions: []
+  position: {x: 770, y: 250}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: Oh, this picture......
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &2852529369403388983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - I haven''t seen this ...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: -6011115148798678568}
   conditions: []
-  position: {x: 770, y: 250}
+  position: {x: 1129.2961, y: 249.59999}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: Don't you recognize them? it's you and me silly
-  speakerImage: {fileID: 0}
+  dialogText: 'I haven''t seen this for so long.
+
+    You still looks so beautiful
+    even after all this time.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -131,9 +163,35 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1828, y: 250}
+  position: {x: 2584, y: 249.59999}
   isConditionsFolded: 1
   actionObjectName: Eding-Mom
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &6368722752454673819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - Anyway, I''m already ...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 3399301621502106749}
+  conditions: []
+  position: {x: 2207.2002, y: 249.59999}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'Anyway, I''m already done here.
+
+    Let''s have some nice meal together.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
