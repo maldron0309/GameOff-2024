@@ -176,7 +176,7 @@ MonoBehaviour:
   speakerName: Girl
   dialogText: 'I would love to!
 
-    I need to ask permission first with mom first.'
+    I need to ask my mom for permission first.'
   speakerImage: {fileID: 0}
   references:
     version: 2

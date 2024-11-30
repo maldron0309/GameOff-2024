@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Whre should I look?'
+  m_Name: 'Dialog: Girl - Where should I look?'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -74,7 +74,7 @@ MonoBehaviour:
   position: {x: 621.2101, y: 366.00006}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Whre should I look?
+  dialogText: Where should I look?
   speakerImage: {fileID: 0}
   references:
     version: 2
