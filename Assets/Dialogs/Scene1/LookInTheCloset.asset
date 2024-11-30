@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - A box with a numbers...'
+  m_Name: 'Dialog: Girl - A box with a combina...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: -6198637150614021663}
+  - {fileID: 5615353240024005795}
   conditions:
   - rid: 5200777445622153216
   position: {x: 1550, y: 395}
   isConditionsFolded: 0
   speakerName: Girl
-  dialogText: A box with a numbers lock. Did I hid a spare key here? I should try
-    to open it at the desk
-  speakerImage: {fileID: 0}
+  dialogText: A box with a combination lock.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds:
@@ -47,11 +46,11 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1550.4, y: 657.6}
+  position: {x: 1550.4, y: 720}
   isConditionsFolded: 1
   speakerName: Girl nothing else here
   dialogText: 
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -71,7 +70,7 @@ MonoBehaviour:
   nextNodes:
   - {fileID: 2403974612368624448}
   conditions: []
-  position: {x: 1865, y: 395}
+  position: {x: 2630.203, y: 355.5999}
   isConditionsFolded: 1
   actionName: 
   gameState: {fileID: 0}
@@ -116,17 +115,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Nothing but socks he...'
+  m_Name: 'Dialog: Girl - Nothing but socks an...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: 5262426918617522862}
+  - {fileID: 1294889414182820441}
   conditions: []
-  position: {x: 1181, y: 228}
+  position: {x: 1110.4003, y: 113.349594}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Nothing but socks here
-  speakerImage: {fileID: 0}
+  dialogText: Nothing but socks and handkerchief here.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -170,7 +169,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1180.7999, y: 1056.4677}
+  position: {x: 1137.9999, y: 1059.3679}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: Not right now.
@@ -188,15 +187,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Nothing to see here.'
+  m_Name: 'Dialog: Girl - Nothing to see here....'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 392.80008, y: 790.7602}
+  position: {x: 323.2, y: 892.6028}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Nothing to see here.
+  dialogText: 'Nothing to see here.
+
+    I need to open the box.'
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
@@ -227,7 +228,60 @@ MonoBehaviour:
   - {fileID: -1691687708800250759}
   - {fileID: -835116777462795712}
   - {fileID: -2074422700954974694}
+  - {fileID: 5615353240024005795}
+  - {fileID: 472650821928286058}
+  - {fileID: 1294889414182820441}
   startNodePosition: {x: -30.880005, y: 504.80005}
+--- !u!114 &472650821928286058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - I should try to open...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -6198637150614021663}
+  conditions: []
+  position: {x: 2208.2231, y: 395.19995}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: I should try to open it at the desk.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &1294889414182820441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - They look quite worn...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5262426918617522862}
+  conditions: []
+  position: {x: 1463.5165, y: 112.8}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'They look quite worn out.
+
+    I use them quite a lot.'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2403974612368624448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +297,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 2326, y: 395}
+  position: {x: 3091.803, y: 355.5999}
   isConditionsFolded: 1
   actionObjectName: ReceiveBox
   references:
@@ -280,6 +334,32 @@ MonoBehaviour:
         key: found_box
         value: no
         conditionType: 0
+--- !u!114 &5615353240024005795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - There''s someting ins...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 472650821928286058}
+  conditions: []
+  position: {x: 1879.0052, y: 395.19995}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'There''s someting inside.
+
+    Is it a key?'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &6916804178256329730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,7 +380,7 @@ MonoBehaviour:
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: Lots of old makeup here. I wonder why.
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

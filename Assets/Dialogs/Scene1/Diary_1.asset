@@ -57,7 +57,7 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1121.6, y: 420}
+  position: {x: 1072.9531, y: 420.00003}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: Looks like a date of some sort. Day, month and year.

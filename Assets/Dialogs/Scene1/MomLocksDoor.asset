@@ -20,7 +20,7 @@ MonoBehaviour:
   speakerName: Girl
   dialogText: 'My Friend is still waiting outside.
 
-    Hmm... I think I hade a spare
+    Hmm... I think I had  a spare
     key somewhere.'
   speakerImage: {fileID: 0}
   references:
