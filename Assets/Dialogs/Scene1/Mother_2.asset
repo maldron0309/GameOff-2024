@@ -10,21 +10,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Mother - Alright, fine!
-
-    You c...'
+  m_Name: 'Dialog: Mother - Anyway, you look a b...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: 2084875244445246520}
   conditions: []
-  position: {x: 1212, y: 264}
+  position: {x: 1681.6001, y: 139.99997}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: 'Alright, fine!
+  dialogText: 'Anyway, you look a bit restless.
 
-    You can lay down in the living room. Just please,
-    get some rest.'
-  speakerImage: {fileID: 0}
+    Maybe the bed room is too confined.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-4467707451438810140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - That''s unexpected.
+
+    S...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 949761166226819981}
+  conditions: []
+  position: {x: 632.9821, y: 140.00002}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'That''s unexpected.
+
+    Seems like you remember where the spare key
+    is.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -45,6 +72,10 @@ MonoBehaviour:
   - {fileID: 8272066220365796174}
   - {fileID: 949761166226819981}
   - {fileID: -6318402737543644843}
+  - {fileID: -4467707451438810140}
+  - {fileID: 2071356604043386709}
+  - {fileID: 2084875244445246520}
+  - {fileID: 5710255987548167214}
   startNodePosition: {x: 112, y: 184}
 --- !u!114 &949761166226819981
 MonoBehaviour:
@@ -56,17 +87,95 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - But I don''t want to ...'
+  m_Name: 'Dialog: Girl - What do you mean I r...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 2071356604043386709}
+  conditions: []
+  position: {x: 987.2, y: 140}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'What do you mean I remember?
+
+    I''m not that old.'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &2071356604043386709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - *Giggling*
+
+    Oh, you''r...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: -6318402737543644843}
   conditions: []
-  position: {x: 741, y: 128}
+  position: {x: 1331.4832, y: 140}
   isConditionsFolded: 1
-  speakerName: Girl
-  dialogText: But I don't want to sleep yet. It's boring.
-  speakerImage: {fileID: 0}
+  speakerName: Mother
+  dialogText: '*Giggling*
+
+    Oh, you''re not as young as you think you are.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &2084875244445246520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Mother - You can lie down in ...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5710255987548167214}
+  conditions: []
+  position: {x: 2128.8, y: 126.40002}
+  isConditionsFolded: 1
+  speakerName: Mother
+  dialogText: 'You can lie down in the living room for a while.
+
+    I still need
+    to finish the dishes.'
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &5710255987548167214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c2fd06040ab1d42bbf246fe518fcd2, type: 3}
+  m_Name: Do Actions
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 2498.4, y: 140}
+  isConditionsFolded: 1
+  actionObjectName: LockDoorFinish
   references:
     version: 2
     RefIds: []
@@ -80,17 +189,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Mother - Hey! I told you to s...'
+  m_Name: 'Dialog: Mother - Oh! You''re out.'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: 949761166226819981}
+  - {fileID: -4467707451438810140}
   conditions: []
-  position: {x: 327, y: 128}
+  position: {x: 293.16, y: 139.95999}
   isConditionsFolded: 1
   speakerName: Mother
-  dialogText: Hey! I told you to stay in bed. How did you open the door, even?
-  speakerImage: {fileID: 0}
+  dialogText: Oh! You're out.
+  speakerImage: {fileID: 1514629944, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

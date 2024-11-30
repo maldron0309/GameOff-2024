@@ -31,3 +31,5 @@ MonoBehaviour:
     value: no
   - key: found_music_box
     value: no
+  - key: try_to_distract_mom
+    value: no

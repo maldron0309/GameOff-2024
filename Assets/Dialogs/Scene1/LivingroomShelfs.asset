@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8693443924613561582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -5039281316058150229}
+  - {fileID: 3250198409294755736}
+  conditions: []
+  position: {x: 1470.4003, y: 576.00653}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &-7919066893300405685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,8 +41,8 @@ MonoBehaviour:
   nextNodes:
   - {fileID: -3743374527627812141}
   - {fileID: -3233914284061794842}
-  - {fileID: 1967630498577960851}
-  - {fileID: 1929138804469972396}
+  - {fileID: -8693443924613561582}
+  - {fileID: -2149510515129006476}
   conditions: []
   position: {x: 996.4501, y: 444.46005}
   isConditionsFolded: 1
@@ -54,6 +79,30 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &-6178510887469532052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Strange... I think I...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -4353336486700300172}
+  conditions: []
+  position: {x: 1763.3141, y: 232.92604}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: Strange... I think I used to be able to reach that high.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &-5039281316058150229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,18 +113,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Hey! What''s in a pot...'
+  m_Name: 'Dialog: Girl - Hey! What''s in this ...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: 5639188636003832338}
+  - {fileID: 595459573922276855}
   conditions:
   - rid: 5200777470330273792
-  position: {x: 1757, y: 557}
+  position: {x: 1741.2676, y: 556.8}
   isConditionsFolded: 0
   speakerName: Girl
-  dialogText: Hey! What's in a pot?
-  speakerImage: {fileID: 0}
+  dialogText: 'Hey! What''s in this pot at the bottom?
+
+    *Bending Over*'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds:
@@ -95,17 +146,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Strange... I think I...'
+  m_Name: 'Dialog: Girl - Am I getting shorter...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: -7286154391692840129}
   conditions: []
-  position: {x: 1706.5801, y: 77.39008}
+  position: {x: 2086.5059, y: 59.558}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: Strange... I think I used to reach it.
-  speakerImage: {fileID: 0}
+  dialogText: Am I getting shorter?
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -123,13 +174,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: -4353336486700300172}
+  - {fileID: -6178510887469532052}
   conditions: []
   position: {x: 1407, y: 286}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: "I can't reach that high. \nDoesn't seem like there is anything anyway."
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -149,11 +200,39 @@ MonoBehaviour:
   nextNodes:
   - {fileID: -7286154391692840129}
   conditions: []
-  position: {x: 1316, y: 1034}
+  position: {x: 1040, y: 1033.6001}
   isConditionsFolded: 1
   speakerName: Girl
   dialogText: Mom's old cactus? I'm not touching that
-  speakerImage: {fileID: 0}
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2910916108792053956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - Oh, it hurts....
+
+    Wha...'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: 5639188636003832338}
+  conditions: []
+  position: {x: 2450.9287, y: 538.39996}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: 'Oh, it hurts....
+
+    What is this thing in this pot.'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -172,9 +251,32 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 2934.96, y: 572}
+  position: {x: 3672.0828, y: 538.39996}
   isConditionsFolded: 1
   actionObjectName: ReceiveMusicBox
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-2149510515129006476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - I''ll do it later.'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1354.4, y: 820.7999}
+  isConditionsFolded: 1
+  speakerName: Girl
+  dialogText: I'll do it later.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -194,7 +296,7 @@ MonoBehaviour:
   nextNodes:
   - {fileID: -2543135942924628861}
   conditions: []
-  position: {x: 2407, y: 557}
+  position: {x: 3169.6829, y: 538.39996}
   isConditionsFolded: 1
   actionName: 
   gameState: {fileID: 0}
@@ -224,38 +326,18 @@ MonoBehaviour:
   - {fileID: -3743374527627812141}
   - {fileID: -3233914284061794842}
   - {fileID: -4353336486700300172}
-  - {fileID: 1967630498577960851}
   - {fileID: -5039281316058150229}
   - {fileID: 5639188636003832338}
   - {fileID: -2543135942924628861}
   - {fileID: -1552941695030435679}
   - {fileID: 3250198409294755736}
-  - {fileID: 1929138804469972396}
+  - {fileID: -2149510515129006476}
+  - {fileID: -6178510887469532052}
+  - {fileID: -8693443924613561582}
+  - {fileID: 595459573922276855}
+  - {fileID: -2910916108792053956}
   startNodePosition: {x: 100, y: 100}
---- !u!114 &1929138804469972396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
-  m_Name: Action
-  m_EditorClassIdentifier: 
-  nodeName: 
-  nextNodes: []
-  conditions: []
-  position: {x: 1422, y: 812}
-  isConditionsFolded: 1
-  actionName: 
-  gameState: {fileID: 0}
-  gameStateChanges: []
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1967630498577960851
+--- !u!114 &595459573922276855
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,18 +347,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girld - Some story book. but...'
+  m_Name: 'Dialog: Girl - *Back Cracking*
+
+    Ouch...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: -5039281316058150229}
-  - {fileID: 3250198409294755736}
+  - {fileID: -2910916108792053956}
   conditions: []
-  position: {x: 1407, y: 526}
+  position: {x: 2076.5837, y: 561.6}
   isConditionsFolded: 1
-  speakerName: Girld
-  dialogText: Some story book. but I've already read them.
-  speakerImage: {fileID: 0}
+  speakerName: Girl
+  dialogText: '*Back Cracking*
+
+    Ouch! My back!'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -290,17 +375,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Nothing else interes...'
+  m_Name: 'Dialog: Girl - I hurt my back.
+
+    Let''...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes: []
   conditions:
   - rid: 5200777470330273793
-  position: {x: 1747.9502, y: 811.9002}
+  position: {x: 1728.5328, y: 835.1173}
   isConditionsFolded: 0
   speakerName: Girl
-  dialogText: Nothing else interesting here
-  speakerImage: {fileID: 0}
+  dialogText: 'I hurt my back.
+
+    Let''s not search any more.'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds:
@@ -320,7 +409,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - Wow. a Music box.
+  m_Name: 'Dialog: Girl - Wow. A Music box.
 
     Ha...'
   m_EditorClassIdentifier: 
@@ -328,14 +417,16 @@ MonoBehaviour:
   nextNodes:
   - {fileID: -1552941695030435679}
   conditions: []
-  position: {x: 2085, y: 557}
+  position: {x: 2847.283, y: 538.39996}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'Wow. a Music box.
+  dialogText: 'Wow. A Music box.
 
-    Have I seen it before. seems familiar I should
-    try playing it on the table'
-  speakerImage: {fileID: 0}
+    Have I seen it before. Seems familiar.
+
+    I
+    should try playing it on the table'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

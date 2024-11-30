@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - There is a hole for ...'
+  m_Name: 'Dialog: Girl - I think I can find i...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
@@ -19,9 +19,33 @@ MonoBehaviour:
   position: {x: 718, y: 208}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: There is a hole for a lever. I think I've seen something that might
-    fit inside store room.
-  speakerImage: {fileID: 0}
+  dialogText: I think I can find it in the store room.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-6607268223120309379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7388a6dc236371a4794e4ee5dd6aedf9, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes: []
+  conditions: []
+  position: {x: 1511.2, y: 312}
+  isConditionsFolded: 1
+  actionName: 
+  gameState: {fileID: 0}
+  gameStateChanges:
+  - key: try_to_distract_mom
+    value: yes
   references:
     version: 2
     RefIds: []
@@ -42,6 +66,7 @@ MonoBehaviour:
   - {fileID: 3257565948752666320}
   - {fileID: -8215745249635405697}
   - {fileID: 1376815488153031267}
+  - {fileID: -6607268223120309379}
   startNodePosition: {x: 144, y: 208}
 --- !u!114 &1376815488153031267
 MonoBehaviour:
@@ -53,16 +78,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - But mom wan''t me to ...'
+  m_Name: 'Dialog: Girl - I need to find a way...'
   m_EditorClassIdentifier: 
   nodeName: 
-  nextNodes: []
+  nextNodes:
+  - {fileID: -6607268223120309379}
   conditions: []
-  position: {x: 1088, y: 208}
+  position: {x: 1108, y: 208}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: But mom wan't me to rest. How am I going to get past her?
-  speakerImage: {fileID: 0}
+  dialogText: I need to find a way to the store room without mom noticing.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -76,17 +102,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - It does not play. I ...'
+  m_Name: 'Dialog: Girl - I cannot play it.
+
+    Th...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
   - {fileID: -8215745249635405697}
   conditions: []
-  position: {x: 359, y: 208}
+  position: {x: 358.40002, y: 208}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'It does not play. I think I need a tool to play it. '
-  speakerImage: {fileID: 0}
+  dialogText: 'I cannot play it.
+
+    The lever is missing.'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []

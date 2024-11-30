@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7086047213307692759
+--- !u!114 &-9081114211348576709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15,13 +15,13 @@ MonoBehaviour:
   nodeName: 
   nextNodes: []
   conditions: []
-  position: {x: 1653.1202, y: 244.6}
+  position: {x: 1484.3976, y: 26.813515}
   isConditionsFolded: 1
-  actionObjectName: TurnOnTV
+  actionObjectName: RestInLivingRoom
   references:
     version: 2
     RefIds: []
---- !u!114 &-6311734607942991367
+--- !u!114 &-5971783756326329708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31,42 +31,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - I''m not watching any...'
-  m_EditorClassIdentifier: 
-  nodeName: 
-  nextNodes: []
-  conditions: []
-  position: {x: 1111.9475, y: 569.6}
-  isConditionsFolded: 1
-  speakerName: Girl
-  dialogText: I'm not watching anything.
-  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &-5037647529985886606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - This will distract m...'
+  m_Name: 'Dialog: Girl - Mom said to just res...'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: -7086047213307692759}
+  - {fileID: 7275400860525947104}
+  conditions:
+  - rid: 4292162030137245696
+  position: {x: 378.40002, y: 59.200012}
+  isConditionsFolded: 0
+  speakerName: Girl
+  dialogText: Mom said to just rest here.
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4292162030137245696
+      type: {class: StateCondition, ns: , asm: Assembly-CSharp}
+      data:
+        key: rest_in_livingRoom
+        value: yes
+        conditionType: 0
+--- !u!114 &-1149713765792431593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
+  m_Name: 'Dialog: Girl - I''m still not tired....'
+  m_EditorClassIdentifier: 
+  nodeName: 
+  nextNodes:
+  - {fileID: -9081114211348576709}
   conditions: []
-  position: {x: 1245.4, y: 268.40005}
+  position: {x: 1113.2168, y: 45.60003}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'This will distract mom.
+  dialogText: 'I''m still not tired.
 
-    I should be able to sneak past her.'
-  speakerImage: {fileID: 0}
+    Maybe I can find something to play.'
+  speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
     RefIds: []
@@ -80,43 +88,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38ab7e17da0b5744391eeb2633b48699, type: 3}
-  m_Name: TV_2
+  m_Name: RestInLivingRoom
   m_EditorClassIdentifier: 
-  startNode: {fileID: 8534164154554807908}
+  startNode: {fileID: -5971783756326329708}
   nodes:
-  - {fileID: 8534164154554807908}
-  - {fileID: -7086047213307692759}
-  - {fileID: 5551304373185350697}
-  - {fileID: -6311734607942991367}
-  - {fileID: -5037647529985886606}
-  startNodePosition: {x: 140, y: 420}
---- !u!114 &5551304373185350697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42a7a094aefc13543a85b93b203c473d, type: 3}
-  m_Name: Decision
-  m_EditorClassIdentifier: 
-  nodeName: 
-  nextNodes:
-  - {fileID: -5037647529985886606}
-  - {fileID: -6311734607942991367}
-  conditions: []
-  position: {x: 762.4, y: 397.59998}
-  isConditionsFolded: 1
-  options:
-  - Turn on the TV
-  - Leave it
-  decisionName: 
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &8534164154554807908
+  - {fileID: -5971783756326329708}
+  - {fileID: 7275400860525947104}
+  - {fileID: -1149713765792431593}
+  - {fileID: -9081114211348576709}
+  startNodePosition: {x: 100, y: 100}
+--- !u!114 &7275400860525947104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,20 +107,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28005f8f78d85e14daeb6c18f45b4969, type: 3}
-  m_Name: 'Dialog: Girl - TV is turned off.
-
-    Sh...'
+  m_Name: 'Dialog: Girl - Hmmmmm.........'
   m_EditorClassIdentifier: 
   nodeName: 
   nextNodes:
-  - {fileID: 5551304373185350697}
+  - {fileID: -1149713765792431593}
   conditions: []
-  position: {x: 412.1479, y: 382.13278}
+  position: {x: 744.7666, y: 45.600006}
   isConditionsFolded: 1
   speakerName: Girl
-  dialogText: 'TV is turned off.
-
-    Should I turn it on?'
+  dialogText: Hmmmmm.........
   speakerImage: {fileID: 1360616277, guid: 5d7e50ea3e8a36d45927befac3213750, type: 3}
   references:
     version: 2
