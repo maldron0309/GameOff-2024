@@ -912,6 +912,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9213871985847932707, guid: 19a9421e4d4eda84d804591696335692, type: 3}
+      propertyPath: m_text
+      value: '<size=40>Art assets</size>
+
+        plainnrice
+
+
+
+        <size=40>Programming</size>
+
+        BryenGX
+        (discord, itch.io)
+
+        ellpArM
+
+        Maldron
+
+
+
+        <size=40>Sound/Music</size>
+
+        Moon
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
