@@ -33,6 +33,7 @@ public class PlayMusicBox : MonoBehaviour, IInteractable
         PlayerMove player = FindAnyObjectByType<PlayerMove>();
         player.canMove = false;
         BackgroundMusicManager.Instance.StopBGM();
+        BackgroundMusicManager.Instance.UpdateMusicVolume(0f);
         SoundEffectsManager.Instance.PlaySound(music);
 
         yield return new WaitForSeconds(10);
