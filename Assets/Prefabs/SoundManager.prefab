@@ -47,7 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundTrack: {fileID: 8300000, guid: 146a0198cc4ff394f91df5c47a2f7264, type: 3}
   menuTrack: {fileID: 8300000, guid: 6bcaff999f02d0a49a5f8702845d137b, type: 3}
-  endingTrack: {fileID: 8300000, guid: 35fce5de8dddcf141b28fc9490e43312, type: 3}
+  endingTrack1: {fileID: 8300000, guid: 35fce5de8dddcf141b28fc9490e43312, type: 3}
+  endingTrack2: {fileID: 8300000, guid: 7ab62ee572ae6324894967f528b8cf23, type: 3}
   gameSettings: {fileID: 11400000, guid: 2e191959c68823840b7b760983ef8822, type: 2}
 --- !u!114 &7463447215031976496
 MonoBehaviour:
@@ -65,4 +66,4 @@ MonoBehaviour:
   tickSound: {fileID: 8300000, guid: 60a0bac3b237c104b8c8ad9ddb0dcfd6, type: 3}
   rainSound: {fileID: 8300000, guid: 6888630965d06e1479f73421ffa8fc18, type: 3}
   itemPickupSound: {fileID: 8300000, guid: b4c070a4c5cd9ce4987312ab6096451a, type: 3}
-  gameSettings: {fileID: 0}
+  gameSettings: {fileID: 11400000, guid: 2e191959c68823840b7b760983ef8822, type: 2}

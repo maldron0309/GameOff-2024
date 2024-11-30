@@ -28,10 +28,12 @@ public class SoundEffectsManager : MonoBehaviour
 
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
+        Debug.Log($"sound volume: {gameSettings.soundVolume}");
+        Debug.Log($"music volume: {gameSettings.musicVolume}");
     }
     private void Start()
     {
-        UpdateSoundEffectsVolume(gameSettings.soundVolume);
+        UpdateSoundEffectsVolume(0.65f);
     }
     public void PlaySound(AudioClip clip)
     {

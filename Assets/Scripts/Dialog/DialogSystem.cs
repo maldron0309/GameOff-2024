@@ -115,6 +115,7 @@ public class DialogSystem : MonoBehaviour
                 int capturedIndex = i;
                 optionButton.transform.Translate(Vector2.down * 60 * validDecisions);
                 optionButton.onClick.AddListener(() => OnOptionSelected(capturedIndex));
+                optionButton.onClick.AddListener(() => SoundEffectsManager.Instance.PlayButtonPressSound());
                 validDecisions++;
             }
         }

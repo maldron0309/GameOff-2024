@@ -31,7 +31,7 @@ public class BackgroundMusicManager : MonoBehaviour
 
     void Start()
     {
-        audioSource.volume = gameSettings.musicVolume;
+        audioSource.volume = 0.25f;// gameSettings.musicVolume;
         //PlayBackgroundTrack();
     }
 
