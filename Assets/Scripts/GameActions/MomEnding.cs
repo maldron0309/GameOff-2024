@@ -19,6 +19,10 @@ public class MomEnding : BaseAction
 
         yield return new WaitForSeconds(2);
 
+        EndScreenUI.instance.ShowSceen("Bad ending");
+        EndScreenUI.instance.images2.SetActive(true);
+        BackgroundMusicManager.Instance.PlayEndingTrack2();
+
         //
     }
 }

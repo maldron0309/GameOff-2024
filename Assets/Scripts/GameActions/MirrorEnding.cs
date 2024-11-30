@@ -19,6 +19,9 @@ public class MirrorEnding : BaseAction
 
         yield return new WaitForSeconds(2);
 
+        EndScreenUI.instance.ShowSceen("Real ending");
+        EndScreenUI.instance.images1.SetActive(true);
+        BackgroundMusicManager.Instance.PlayEndingTrack1();
         //
     }
 }

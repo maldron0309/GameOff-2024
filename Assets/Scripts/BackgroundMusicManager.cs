@@ -7,7 +7,8 @@ public class BackgroundMusicManager : MonoBehaviour
     public static BackgroundMusicManager Instance;
     public AudioClip backgroundTrack;
     public AudioClip menuTrack;
-    public AudioClip endingTrack;
+    public AudioClip endingTrack1;
+    public AudioClip endingTrack2;
     private AudioSource audioSource;
     public GameSettings gameSettings;
 
@@ -23,7 +24,7 @@ public class BackgroundMusicManager : MonoBehaviour
             Destroy(gameObject);
         }
         audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.loop = false;
+        audioSource.loop = true;
         audioSource.volume = 0.5f;
         audioSource.playOnAwake = false;
     }
@@ -36,14 +37,18 @@ public class BackgroundMusicManager : MonoBehaviour
 
     void Update()
     {
-        if (!audioSource.isPlaying)
-        {
-            PlayBackgroundTrack();
-        }
+        //if (!audioSource.isPlaying)
+        //{
+        //    PlayBackgroundTrack();
+        //}
     }
     public void UpdateMusicVolume(float volume)
     {
         audioSource.volume = volume;
+    }
+    public float GetVolume()
+    {
+        return audioSource.volume;
     }
 
     public void PlayBackgroundTrack()
@@ -56,9 +61,14 @@ public class BackgroundMusicManager : MonoBehaviour
         audioSource.clip = menuTrack;
         audioSource.Play();
     }
-    public void PlayEndingTrack()
+    public void PlayEndingTrack1()
     {
-        audioSource.clip = endingTrack;
+        audioSource.clip = endingTrack1;
+        audioSource.Play();
+    }
+    public void PlayEndingTrack2()
+    {
+        audioSource.clip = endingTrack2;
         audioSource.Play();
     }
     public void StopBGM()

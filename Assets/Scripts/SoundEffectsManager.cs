@@ -54,4 +54,8 @@ public class SoundEffectsManager : MonoBehaviour
     {
         audioSource.volume = volume;
     }
+    public void StopSound()
+    {
+        audioSource.Stop();
+    }
 }
